@@ -1,0 +1,20 @@
+$breakpoints: (
+	'xxl': (max-width: 1680px),
+	'xl': (max-width: 1400px),
+	'l': (max-width: 1024px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+	'xxs': (max-width: 375px),
+);
+
+$font: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif;
+$font-head: 'Affect', 'Helvetica Neue', Arial, sans-serif;
+
+$container_width: 1480px;
+
+$gutter: 12px;
+
+$light-blue: #72e1f4;
+$link-color: #7bd3e6;
+$pink: #f3afd0;

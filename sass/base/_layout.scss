@@ -1,0 +1,42 @@
+body {
+	padding-left: 300px;
+	@include res(xl) {
+		padding-left: 280px;
+	}
+	@include res(l) {
+		padding-left: 240px;
+	}
+	@include res(m) {
+		padding-left: 0;
+	}
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: $container_width;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.aside-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	@include res(xl) {
+		width: 280px;
+	}
+	@include res(l) {
+		width: 240px;
+	}
+	@include res(m) {
+		left: -240px;
+	}
+	@include res(s) {
+		width: 100%;
+		left: -100%;
+	}
+}
