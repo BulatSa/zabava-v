@@ -1,0 +1,130 @@
+.aside-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: $light-blue;
+	@include res(xl) {
+		width: 260px;
+	}
+	@include res(l) {
+		width: 200px;
+	}
+	@include res(m) {
+		width: 100%;
+		padding-top: 35px;
+	}
+}
+
+.aside-panel__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: $pad-s;
+	padding-bottom: $pad-xs;
+	@include res(xl) {
+		padding-top: $pad-xs;
+	}
+	@include res(l) {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		@include res(xl) {
+			max-width: 140px;
+		}
+		@include res(l) {
+			max-width: 120px;
+		}
+		@include res(m) {
+			display: none;
+		}
+	}
+}
+
+.aside-panel__menu {
+	ul {}
+	li {}
+	a {
+		display: block;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: $pad-s;
+		padding-right: $pad-s;
+		font-family: $font-head;
+		font-size: 18px;
+		letter-spacing: 0.06em;
+		line-height: 1.2;
+		color: #fff;
+		text-transform: uppercase;
+		transition: all 0.3s ease;
+		@include res(xl) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 16px;
+		}
+		@include res(l) {
+			padding-top: 7px;
+			padding-bottom: 7px;
+			padding-left: 12px;
+			padding-right: 12px;
+			font-size: 14px;
+		}
+		&:hover {
+			background: #25cadc;
+		}
+	}
+}
+
+.aside-panel__contact {
+	padding-left: $pad-s;
+	padding-right: $pad-s;
+
+	@include res(l) {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+.aside-panel__contact-phone {
+	padding-top: $pad-xxs;
+	color: #fff;
+	span {
+		display: block;
+		font-size: 14px;
+	}
+	a {
+		font-family: $font-head;
+		font-size: 26px;
+		letter-spacing: 0.06em;
+		transition: all 0.3s ease;
+		@include res(xl) {
+			font-size: 22px;
+		}
+		@include res(l) {
+			font-size: 18px;
+		}
+		&:hover {
+			color: #2a2c3d;
+		}
+	}
+}
+
+.aside-panel__contact-work {
+	padding-top: $pad-xxs;
+	padding-bottom: $pad-xs;
+	color: #fff;
+	span {
+		display: block;
+		font-size: 14px;
+	}
+	p {
+		font-size: 18px;
+		@include res(l) {
+			font-size: 16px;
+		}
+	}
+}

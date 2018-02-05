@@ -38,23 +38,50 @@
 
 <body>
 
-<aside class="aside-panel"></aside>
+<aside class="aside-panel">
+	<div class="aside-panel__logo">
+		<a href="#"><img src="img/logo-aside.svg" alt=""></a>
+	</div>
+	<nav class="aside-panel__menu">
+		<ul>
+			<li><a href="#">День рождения</a></li>
+			<li><a href="#">Аниматоры</a></li>
+			<li><a href="#">шоу-программы</a></li>
+			<li><a href="#">добавки</a></li>
+			<li><a href="#">календарные праздники</a></li>
+			<li><a href="#">для школ и классов</a></li>
+			<li><a href="#">корпоративные мероприятия</a></li>
+		</ul>
+	</nav>
+	<div class="aside-panel__contact">
+		<div class="aside-panel__contact-phone">
+			<span>Звоните</span>
+			<a href="tel:88462671769">8 (846) 267·17·69</a>
+		</div>
+		<div class="aside-panel__contact-work">
+			<span>Режим работы</span>
+			<p>09:00 – 18:00</p>
+		</div>
+		<a href="#" class="btn btn--mini btn--white">заказать звонок</a>
+	</div>
+</aside>
 
 <section class="top-panel-sec">
 	<div class="top-panel container">
 		<nav class="top-panel__menu">
 			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
+				<li><a href="#">о нас</a></li>
+				<li><a href="#">пространства для праздников</a></li>
+				<li><a href="#">услуги</a></li>
+				<li><a href="#">цены</a></li>
+				<li><a href="#">акции</a></li>
+				<li><a href="#">отзывы</a></li>
+				<li><a href="#">контакты</a></li>
 			</ul>
 		</nav>
 		<div class="top-panel__soc social-list">
-			<a href="#"><i></i></a>
-			<a href="#"><i></i></a>
+			<a href="#"><i class="i-soc-vk"></i></a>
+			<a href="#"><i class="i-soc-insta"></i></a>
 		</div>
 	</div>
 </section>
