@@ -150,6 +150,33 @@ $(function () {
 
 
 /***********************
+Aside Menu BEGIN
+***********************/
+$(document).ready(function() {
+	function openChildMenu($childLink) {
+		$childLink.closest('li').find('.a-menu__child').slideDown();
+	}
+
+	function closeOtherChildMenu($otherMenu) {
+		$otherMenu.slideUp();
+	}
+
+	$('.a-menu__child-link').on('click', function(){
+		var $otherMenu = $('.a-menu__parent').find('li').not($(this).closest('li')).find('.a-menu__child');
+		$otherMenu.closest('li').slideUp();
+		$otherMenu.closest('li').addClass('hide');
+		$(this).closest('li').removeClass('hide');
+		//console.log($otherMenu);
+		openChildMenu($(this));
+		closeOtherChildMenu($otherMenu)
+	});
+});
+/***********************
+Aside Menu END
+***********************/
+
+
+/***********************
  Прокрутка к секциям BEGIN
  ***********************/
 $(function () {

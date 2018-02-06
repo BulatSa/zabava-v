@@ -42,15 +42,82 @@
 	<div class="aside-panel__logo">
 		<a href="#"><img src="img/logo-aside.svg" alt=""></a>
 	</div>
-	<nav class="aside-panel__menu">
-		<ul>
-			<li><a href="#">День рождения</a></li>
-			<li><a href="#">Аниматоры</a></li>
-			<li><a href="#">шоу-программы</a></li>
-			<li><a href="#">добавки</a></li>
-			<li><a href="#">календарные праздники</a></li>
-			<li><a href="#">для школ и классов</a></li>
-			<li><a href="#">корпоративные мероприятия</a></li>
+	<nav class="aside-panel__menu a-menu">
+		<ul class="a-menu__parent">
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">День рождения</a>
+					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+				</span>
+				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">Аниматоры</a>
+					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+				</span>
+				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">шоу-программы</a>
+					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+				</span>
+				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">добавки</a>
+					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+				</span>
+				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">календарные праздники</a>
+					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+				</span>
+				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">для школ и классов</a>
+					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+				</span>
+				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="a-menu__parent-links">
+					<a href="#">корпоративные мероприятия</a>
+				</span>
+			</li>
 		</ul>
 	</nav>
 	<div class="aside-panel__contact">

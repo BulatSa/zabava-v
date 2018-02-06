@@ -48,19 +48,49 @@
 .aside-panel__menu {
 	ul {}
 	li {}
+}
+
+.a-menu {
 	a {
 		display: block;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		padding-left: $pad-s;
-		padding-right: $pad-s;
 		font-family: $font-head;
-		font-size: 18px;
 		letter-spacing: 0.06em;
 		line-height: 1.2;
 		color: #fff;
 		text-transform: uppercase;
 		transition: all 0.3s ease;
+	}
+}
+.a-menu__parent {
+	&>li {
+		position: relative;
+		//transition: all 0.3s ease;
+		transform: translate3d(0,0,0);
+		&.hide {
+			transform: translate3d(-360px,0,0);
+		}
+	}
+}
+
+.a-menu__parent-links {
+	position: relative;
+	display: block;
+	&:hover {
+		transition: all 0.3s ease;
+		background: #25cadc;
+		&>a {
+			color: #2a2c3d;
+		}
+		.a-menu__child-link {
+			opacity: 1;
+		}
+	}
+	&>a {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: $pad-s;
+		padding-right: $pad-m;
+		font-size: 18px;
 		@include res(xl) {
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -73,9 +103,53 @@
 			padding-right: 12px;
 			font-size: 14px;
 		}
+	}
+}
+
+.a-menu__child {
+	display: none;
+	a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: $pad-m;
+		padding-right: $pad-xs;
+		font-size: 16px;
+		@include res(xl) {
+			font-size: 14px;
+		}
+		@include res(l) {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			padding-left: $pad-xs;
+		}
 		&:hover {
 			background: #25cadc;
 		}
+	}
+	&.active {}
+}
+
+.a-menu__child-link {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	display: flex!important;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 100%;
+	padding: 0!important;
+	opacity: 0;
+	&:hover {
+		color: #fff;
+		background: $pink;
+		i {
+			transform: translate3d(0,0,0) rotate(90deg);
+		}
+	}
+	i {
+		transition: all 0.3s ease;
+		transform: translate3d(0,0,0);
 	}
 }
 

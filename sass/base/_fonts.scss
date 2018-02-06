@@ -48,6 +48,12 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-left:before {
+	content: "\e904";
+}
+.i-right:before {
+	content: "\e905";
+}
 .i-soc-fb:before {
 	content: "\e900";
 }
