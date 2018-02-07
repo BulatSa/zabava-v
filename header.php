@@ -38,27 +38,53 @@
 
 <body>
 
+<div class="burger">
+	<figure></figure>
+</div>
+
 <aside class="aside-panel">
+
 	<div class="aside-panel__logo">
 		<a href="#"><img src="img/logo-aside.svg" alt=""></a>
 	</div>
 	<nav class="aside-panel__menu a-menu">
+		<div class="a-menu__back opened">Меню <span><i class="i-left"></i></span></div>
 		<ul class="a-menu__parent">
-			<li>
+			<li class="opened">
 				<span class="a-menu__parent-links">
 					<a href="#">День рождения</a>
-					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
 					<li><a href="#">Второй игрок</a></li>
 					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li><li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li><li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+
 				</ul>
 			</li>
 			<li>
 				<span class="a-menu__parent-links">
 					<a href="#">Аниматоры</a>
-					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
@@ -72,7 +98,7 @@
 			<li>
 				<span class="a-menu__parent-links">
 					<a href="#">шоу-программы</a>
-					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
@@ -83,7 +109,7 @@
 			<li>
 				<span class="a-menu__parent-links">
 					<a href="#">добавки</a>
-					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
@@ -94,7 +120,7 @@
 			<li>
 				<span class="a-menu__parent-links">
 					<a href="#">календарные праздники</a>
-					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
@@ -105,7 +131,7 @@
 			<li>
 				<span class="a-menu__parent-links">
 					<a href="#">для школ и классов</a>
-					<a href="#" class="a-menu__child-link"><i class="i-right"></i></a>
+					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
@@ -118,6 +144,17 @@
 					<a href="#">корпоративные мероприятия</a>
 				</span>
 			</li>
+		</ul>
+	</nav>
+	<nav class="a-menu__nav">
+		<ul>
+			<li><a href="#">о нас</a></li>
+			<li><a href="#">пространства для праздников</a></li>
+			<li><a href="#">услуги</a></li>
+			<li><a href="#">цены</a></li>
+			<li><a href="#">акции</a></li>
+			<li><a href="#">отзывы</a></li>
+			<li><a href="#">контакты</a></li>
 		</ul>
 	</nav>
 	<div class="aside-panel__contact">
@@ -135,6 +172,10 @@
 
 <section class="top-panel-sec">
 	<div class="top-panel container">
+		<div class="top-panel__mobile">
+			<img src="img/logo-mobile.svg" alt="">
+			<a href="tel:88462671769">8 (846) 267·17·69</a>
+		</div>
 		<nav class="top-panel__menu">
 			<ul>
 				<li><a href="#">о нас</a></li>

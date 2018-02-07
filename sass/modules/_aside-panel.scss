@@ -1,10 +1,72 @@
+.burger{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 0 0 5px 0;
+	box-shadow: -1px 1px 3px 0 rgba(0,0,0,0.2);
+	cursor: pointer;
+	background: $pink;
+	z-index: 25;
+	@include res(l){
+		display: flex;
+	}
+
+	figure{
+		position: relative;
+		width: 25px;
+		height: 2px;
+		background: #FFF;
+		transition: transform 0.4s ease,background 0.2s ease 0.1s;
+
+		&:before,&:after{
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 2px;
+			background: #FFF;
+			transition: transform 0.4s ease;
+		}
+
+		&:before{
+			transform: rotate(0) translate3d(0,-6px,0);
+		}
+
+		&:after{
+			transform: rotate(0) translate3d(0,6px,0);
+		}
+	}
+
+	&.active{
+
+		figure{
+			background: $pink;
+			transform: rotate(-180deg);
+			transition: transform 0.4s ease,background 0.1s ease;
+			&:before{
+				transform: rotate(-45deg) translate3d(0,0,0) scaleX(0.7);
+			}
+			&:after{
+				transform: rotate(45deg) translate3d(0,0,0) scaleX(0.7);
+			}
+		}
+	}
+}
+
 .aside-panel {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 300px;
 	height: 100%;
+	padding-bottom: $pad-s;
 	background: $light-blue;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	@include res(xl) {
 		width: 260px;
 	}
@@ -13,7 +75,14 @@
 	}
 	@include res(m) {
 		width: 100%;
-		padding-top: 35px;
+		padding-top: 50px;
+		transform: translate3d(-100%,0,0);
+		transition: all 0.3s ease;
+		pointer-events: none;
+	}
+	&.opened {
+		pointer-events: all;
+		transform: translate3d(0,0,0);
 	}
 }
 
@@ -30,6 +99,9 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+	@include res(m) {
+		display: none;
+	}
 	img {
 		display: block;
 		max-width: 100%;
@@ -38,9 +110,6 @@
 		}
 		@include res(l) {
 			max-width: 120px;
-		}
-		@include res(m) {
-			display: none;
 		}
 	}
 }
@@ -61,13 +130,101 @@
 		transition: all 0.3s ease;
 	}
 }
+
+.a-menu__back {
+	position: relative;
+	display: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: $pad-s;
+	padding-right: $pad-m;
+	text-transform: uppercase;
+	font-family: $font-head;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 0.06em;
+	color: #fff;
+	cursor: pointer;
+	//transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
+	@include res(xl) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	@include res(l) {
+		padding-left: 12px;
+		font-size: 16px;
+	}
+	@include res(m) {
+		margin-bottom: 2px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		line-height: 1;
+	}
+	&:hover {
+		color: #2a2c3d;
+		//background: #25cadc;
+	}
+	&.hide {
+		opacity: 0;
+	}
+	&.opened {
+		opacity: 1;
+		display: block;
+	}
+	span {
+		position: absolute;
+		top: 0px;
+		right: 0;
+		display: flex!important;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 100%;
+		padding: 0!important;
+		opacity: 0;
+		@include res(l) {
+			width: 35px;
+			font-size: 12px;
+			color: #fff;
+			opacity: 1;
+			border-radius: 8px 0 0 8px;
+			background: transparentize(#25cadc,0.7);
+		}
+	}
+	i {
+		@include res(l) {
+			font-size: 12px;
+		}
+	}
+}
+
 .a-menu__parent {
 	&>li {
 		position: relative;
-		//transition: all 0.3s ease;
+		opacity: 1;
+		//transition: opacity 0.3s ease, transform 0.3s ease;
 		transform: translate3d(0,0,0);
 		&.hide {
-			transform: translate3d(-360px,0,0);
+			opacity: 0;
+			//transform: translate3d(-360px,0,0);
+		}
+		&.opened {
+			&~li {
+				display: none;
+			}
+			.a-menu__parent-links>a {
+				color: #2a2c3d;
+				background: #25cadc;
+			}
+			.a-menu__child {
+				display: block;
+			}
+			.a-menu__child-link {
+				opacity: 0;
+				pointer-events: none;
+				visibility: hidden;
+			}
 		}
 	}
 }
@@ -75,8 +232,8 @@
 .a-menu__parent-links {
 	position: relative;
 	display: block;
+	transition: all 0.3s ease;
 	&:hover {
-		transition: all 0.3s ease;
 		background: #25cadc;
 		&>a {
 			color: #2a2c3d;
@@ -97,10 +254,11 @@
 			font-size: 16px;
 		}
 		@include res(l) {
-			padding-top: 7px;
-			padding-bottom: 7px;
+			margin-bottom: 2px;
+			padding-top: 9px;
+			padding-bottom: 9px;
 			padding-left: 12px;
-			padding-right: 12px;
+			padding-right: 40px;
 			font-size: 14px;
 		}
 	}
@@ -108,10 +266,11 @@
 
 .a-menu__child {
 	display: none;
+	//transition: opacity 0.3s ease;
 	a {
 		padding-top: 10px;
 		padding-bottom: 10px;
-		padding-left: $pad-m;
+		padding-left: 50px;
 		padding-right: $pad-xs;
 		font-size: 16px;
 		@include res(xl) {
@@ -126,7 +285,9 @@
 			background: #25cadc;
 		}
 	}
-	&.active {}
+	&.hide {
+		opacity: 0;
+	}
 }
 
 .a-menu__child-link {
@@ -140,11 +301,19 @@
 	height: 100%;
 	padding: 0!important;
 	opacity: 0;
+	@include res(l) {
+		width: 35px;
+		font-size: 12px;
+		color: #fff;
+		opacity: 1;
+		border-radius: 8px 0 0 8px;
+		background: transparentize(#25cadc,0.7);
+	}
 	&:hover {
 		color: #fff;
 		background: $pink;
 		i {
-			transform: translate3d(0,0,0) rotate(90deg);
+			transform: translate3d(0,0,0);
 		}
 	}
 	i {
@@ -154,6 +323,7 @@
 }
 
 .aside-panel__contact {
+	margin-bottom: $pad-s;
 	padding-left: $pad-s;
 	padding-right: $pad-s;
 
@@ -199,6 +369,33 @@
 		font-size: 18px;
 		@include res(l) {
 			font-size: 16px;
+		}
+	}
+}
+
+.a-menu__nav {
+	display: none;
+	@include res(m) {
+		display: block;
+		margin-top: 10px;
+		margin-left: 12px;
+		margin-right: 12px;
+		padding-top: 10px;
+
+		border-top: 1px solid #fff;
+	}
+	li {
+		display: inline-block;
+		margin: 0 10px 10px 0;
+	}
+	a {
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #2a2c3d;
+		border-bottom: 1px solid transparentize(#2a2c3d,0.6);
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: #2a2c3d;
 		}
 	}
 }

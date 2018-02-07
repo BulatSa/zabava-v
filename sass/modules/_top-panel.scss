@@ -9,9 +9,25 @@
 	justify-content: space-between;
 }
 
+.top-panel__mobile {
+	display: none;
+	@include res(m) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding-left: 50px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
 .top-panel__menu {
 	max-width: 960px;
 	width: 100%;
+	@include res(m) {
+		display: none;
+	}
 	ul {
 		display: flex;
 		align-items: center;
@@ -52,6 +68,9 @@
 	@include res(l) {
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+	@include res(m) {
+		display: none!important;
 	}
 }
 
