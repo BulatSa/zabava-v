@@ -1,3 +1,56 @@
+<section class="footer-sec def-sec">
+	<div class="footer container">
+		<div class="footer__info">
+			<div class="footer__nav">
+				<div class="footer__nav-block footer__nav-block--left">
+					<p class="h5">о нас</p>
+					<ul>
+						<li><a href="#">Пространства</a></li>
+						<li><a href="#">акции</a></li>
+						<li><a href="#">услуги</a></li>
+						<li><a href="#">отзывы</a></li>
+						<li><a href="#">цены</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block footer__nav-block--right">
+					<p class="h5">Услуги</p>
+					<ul>
+						<li><a href="#">День рождения</a></li>
+						<li><a href="#">календарные праздники</a></li>
+						<li><a href="#">аниматоры</a></li>
+						<li><a href="#">для школ и классов</a></li>
+						<li><a href="#">шоу программы</a></li>
+						<li><a href="#">копроративные мероприятия</a></li>
+						<li><a href="#">добавки</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__subscribe">
+				<p class="h5">будьте в курсе новостей</p>
+				<form class="form-subscribe">
+					<input type="text" class="input-text input-text--subscr" placeholder="введите свой e-mail">
+					<button><i class="i-rocket"></i></button>
+				</form>
+				<span>Подпишиесь и узнавайте обо всем первыми</span>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-copyright">
+				<span>© 2017 Студия праздника «Забава»</span>
+			</div>
+			<div class="footer__bottom-politic">
+				<a href="#" target="_blank">Политика конфиденциальности</a>
+			</div>
+			<div class="footer__bottom-develop">
+				<a href="#" target="_blank">
+
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Модальные окна -->
 <div class="modals-sec">
 

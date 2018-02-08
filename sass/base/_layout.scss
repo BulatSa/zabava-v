@@ -4,9 +4,7 @@ body {
 		padding-left: 260px;
 	}
 	@include res(l) {
-		padding-left: 200px;
-	}
-	@include res(m) {
+		padding-top: 40px;
 		padding-left: 0;
 	}
 }
@@ -42,5 +40,22 @@ body {
 	@include res(s) {
 		width: 100%;
 		left: -100%;
+	}
+}
+
+.def-sec {
+	padding-top: $pad-l;
+	padding-bottom: $pad-l;
+	@include res(xl) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(l) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
 	}
 }

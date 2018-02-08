@@ -67,18 +67,23 @@
 	background: $light-blue;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
+	z-index: 10;
 	@include res(xl) {
 		width: 260px;
 	}
 	@include res(l) {
-		width: 200px;
+		width: 300px;
+		padding-top: 50px;
+		transform: translate3d(-300px,0,0);
+		transition: all 0.3s ease;
+		pointer-events: none;
 	}
 	@include res(m) {
 		width: 100%;
-		padding-top: 50px;
 		transform: translate3d(-100%,0,0);
-		transition: all 0.3s ease;
-		pointer-events: none;
+	}
+	.mCSB_inside > .mCSB_container {
+		margin-right: 0;
 	}
 	&.opened {
 		pointer-events: all;
@@ -102,19 +107,24 @@
 	@include res(m) {
 		display: none;
 	}
+	a {
+		display: block;
+	}
 	img {
 		display: block;
 		max-width: 100%;
 		@include res(xl) {
-			max-width: 140px;
+			max-width: 100px;
 		}
 		@include res(l) {
-			max-width: 120px;
+			max-width: 100px;
 		}
 	}
 }
 
 .aside-panel__menu {
+	height: auto;
+	//max-height: 400px;
 	ul {}
 	li {}
 }
@@ -145,7 +155,7 @@
 	letter-spacing: 0.06em;
 	color: #fff;
 	cursor: pointer;
-	//transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
+	transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
 	@include res(xl) {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -182,7 +192,7 @@
 		width: 50px;
 		height: 100%;
 		padding: 0!important;
-		opacity: 0;
+		//opacity: 0;
 		@include res(l) {
 			width: 35px;
 			font-size: 12px;
@@ -218,7 +228,8 @@
 				background: #25cadc;
 			}
 			.a-menu__child {
-				display: block;
+				display: flex;
+				flex-direction: column;
 			}
 			.a-menu__child-link {
 				opacity: 0;
@@ -266,7 +277,18 @@
 
 .a-menu__child {
 	display: none;
+	max-height: 360px;
+	overflow: hidden;
 	//transition: opacity 0.3s ease;
+	@include res(xl) {
+		max-height: 230px;
+	}
+	@include res(l) {
+		max-height: 220px;
+	}
+	&.ie {
+		overflow: auto;
+	}
 	a {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -284,6 +306,15 @@
 		&:hover {
 			background: #25cadc;
 		}
+	}
+	.simplebar-track.vertical {
+		right: 4px;
+		border-radius: 8px;
+		background: #5bdaed;
+	}
+	.simplebar-track .simplebar-scrollbar.visible {
+		opacity: 0.8;
+		background: #fff;
 	}
 	&.hide {
 		opacity: 0;
@@ -391,8 +422,8 @@
 	a {
 		font-size: 12px;
 		text-transform: uppercase;
-		color: #2a2c3d;
-		border-bottom: 1px solid transparentize(#2a2c3d,0.6);
+		color: #fff;
+		border-bottom: 1px solid transparentize(#2a2c3d,0.8);
 		transition: all 0.3s ease;
 		&:hover {
 			border-color: #2a2c3d;

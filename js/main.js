@@ -150,9 +150,34 @@ $(function () {
 
 
 /***********************
+ Custom Scroll BEGIN
+ ***********************/
+$(document).ready(function() {
+
+});
+/***********************
+ Custom Scroll END
+ ***********************/
+
+
+/***********************
 Aside Menu BEGIN
 ***********************/
 $(document).ready(function() {
+	// For IE10
+	var ua = window.navigator.userAgent.toLowerCase(),
+		is_ie = (/trident/gi).test(ua) || (/msie/gi).test(ua);
+	if(is_ie) {
+		$('.a-menu__child').addClass('ie');
+	} else {
+		$('.a-menu__child').each(function () {
+			new SimpleBar(this,{
+				autoHide: false
+			});
+		});
+	}
+
+
 	function openChildLink($asideLi) {
 		$asideLi.addClass('opened');
 		$('.a-menu__parent>li').not($asideLi).slideUp(0).addClass('hide');
@@ -201,6 +226,7 @@ $(function(){
 /***********************
  Mob menu END
  ***********************/
+
 
 
 /***********************

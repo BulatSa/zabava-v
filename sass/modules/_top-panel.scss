@@ -11,21 +11,27 @@
 
 .top-panel__mobile {
 	display: none;
-	@include res(m) {
+	@include res(l) {
+		position: fixed;
+		top: 0;
+		left: 0;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
 		padding-left: 50px;
+		padding-right: $gutter-mobile;
 		padding-top: 5px;
 		padding-bottom: 5px;
+		background: #fff;
+		z-index: 11;
 	}
 }
 
 .top-panel__menu {
 	max-width: 960px;
 	width: 100%;
-	@include res(m) {
+	@include res(l) {
 		display: none;
 	}
 	ul {
@@ -66,10 +72,6 @@
 	padding-left: $gutter;
 	padding-right: $gutter;
 	@include res(l) {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-	@include res(m) {
 		display: none!important;
 	}
 }

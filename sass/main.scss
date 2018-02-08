@@ -4,6 +4,7 @@
 @import 'helpers/placeholders';
 
 @import 'vendors/fancybox';
+@import 'vendors/simplebar';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -17,5 +18,6 @@
 @import 'modules/modals';
 @import 'modules/top-panel';
 @import 'modules/aside-panel';
+@import 'modules/footer';
 
 @import 'pages/home';

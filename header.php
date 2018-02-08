@@ -45,7 +45,7 @@
 <aside class="aside-panel">
 
 	<div class="aside-panel__logo">
-		<a href="#"><img src="img/logo-aside.svg" alt=""></a>
+		<a href="#"><img src="img/logo-aside.svg" alt="Забава"></a>
 	</div>
 	<nav class="aside-panel__menu a-menu">
 		<div class="a-menu__back opened">Меню <span><i class="i-left"></i></span></div>
@@ -57,7 +57,7 @@
 				</span>
 				<ul class="a-menu__child">
 					<li><a href="#">Первый игрок</a></li>
-					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Второй игрокПервый игрок</a></li>
 					<li><a href="#">Третий игрок</a></li>
 					<li><a href="#">Первый игрок</a></li>
 					<li><a href="#">Второй игрок</a></li>
@@ -87,6 +87,17 @@
 					<span class="a-menu__child-link"><i class="i-right"></i></span>
 				</span>
 				<ul class="a-menu__child">
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Второй игрокПервый игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
+					<li><a href="#">Первый игрок</a></li>
+					<li><a href="#">Второй игрок</a></li>
+					<li><a href="#">Третий игрок</a></li>
 					<li><a href="#">Первый игрок</a></li>
 					<li><a href="#">Второй игрок</a></li>
 					<li><a href="#">Третий игрок</a></li>

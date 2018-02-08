@@ -1,0 +1,88 @@
+.footer-sec {
+	background: url('../img/bg-footer.jpg') no-repeat center center;
+}
+
+.footer {}
+
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	.h5 {
+		padding-bottom: $pad-xs;
+		color: $pink;
+	}
+}
+
+.footer__nav {
+	display: flex;
+	max-width: 960px;
+	padding-right: $pad-s;
+}
+
+.footer__nav-block {
+	width: 50%;
+	ul {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	li {
+		display: block;
+		width: 50%;
+		padding-right: 15px;
+	}
+	a {
+		display: inline-block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $light-blue;
+		transition: all 0.3s ease;
+		@include res(xl) {
+			font-size: 13px;
+		}
+		@include res(l) {
+			padding-top: 4px;
+			padding-bottom: 4px;
+			font-size: 12px;
+		}
+		&:hover {
+			color: $pink;
+		}
+	}
+	&--left {
+		width: 40%;
+	}
+	&--right {
+		width: 60%;
+	}
+}
+
+.footer__subscribe {
+	width: 33.33333%;
+	max-width: 330px;
+	text-align: right;
+	span {
+		display: block;
+		margin-top: 5px;
+		text-align: center;
+		font-size: 14px;
+		color: #666b94;
+	}
+}
+
+.footer__bottom {
+	display: flex;
+	padding-left: $gutter;
+	padding-right: $gutter;
+}
+
+.footer__bottom-copyright {}
+
+.footer__bottom-politic {}
+
+.footer__bottom-develop {}

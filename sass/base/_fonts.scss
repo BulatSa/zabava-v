@@ -48,6 +48,9 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-rocket:before {
+	content: "\e906";
+}
 .i-left:before {
 	content: "\e904";
 }
