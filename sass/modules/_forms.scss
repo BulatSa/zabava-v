@@ -11,11 +11,15 @@ label{cursor: pointer;}
 	border: 1px solid #fff;
 	border-radius: 27px ;
 	overflow: visible;
+	transition: all 0.3s ease;
 	@include res(xl) {
-		padding: 14px 23px;
+		padding: 14px 20px;
 	}
 	@include res(l) {
 		padding: 12px 20px;
+	}
+	@include res(xs) {
+		padding: 10px 18px;
 	}
 
 	@include placeholder {
@@ -32,16 +36,21 @@ label{cursor: pointer;}
 		}
 	}
 
+	&.error {
+		border-color: red;
+		background: #ffd7d9;
+	}
+
 	&--subscr {
 		padding-right: 95px;
 		color: #2a2c3d;
 		font-size: 12px;
 		text-transform: uppercase;
 		@include res(xl) {
-			padding-right: 85px;
+			padding-right: 65px;
 		}
 		@include res(l) {
-			padding-right: 75px;
+			padding-right: 65px;
 		}
 		@include placeholder {
 			font-size: 12px;
@@ -76,7 +85,7 @@ label{cursor: pointer;}
 		transition: all 0.3s ease;
 		background: $light-blue;
 		@include res(xl) {
-			width: 75px;
+			width: 60px;
 			font-size: 28px;
 		}
 		@include res(l) {

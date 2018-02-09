@@ -1,0 +1,106 @@
+.big-slider-sec {}
+
+.big-slider {}
+
+.big-slide {
+	display: flex!important;
+	align-items: flex-start;
+	min-height: 762px;
+	padding-top: 200px;
+	background-position: center center;
+	background-size: cover;
+	@include res(xl) {
+		padding-top: 140px;
+		min-height: 610px;
+	}
+	@include res(l) {
+		min-height: 480px;
+		padding-top: 100px;
+	}
+	@include res(m) {
+		min-height: 380px;
+		padding-top: 80px;
+	}
+	@include res(s) {
+		min-height: 280px;
+	}
+}
+
+.big-slide__info {
+	max-width: 510px;
+	margin-left: 120px;
+	padding-bottom: $pad-m;
+	text-align: center;
+	color: #fff;
+	@include res(xl) {
+		margin-left: 50px;
+	}
+	@include res(l) {
+		margin-left: 0px;
+	}
+}
+
+.big-slide__descr {
+	max-width: 360px;
+	margin: 0 auto $pad-m;
+	@include res(xl) {
+		margin-bottom: $pad-s;
+	}
+	@include res(s) {
+		margin-bottom: $pad-xs;
+	}
+}
+
+.big-slider-dots {
+	position: absolute;
+	top: 160px;
+	left: 132px;
+	width: 100%;
+	max-width: 510px;
+	display: flex;
+	justify-content: center;
+	@include res(xl) {
+		top: 90px;
+		left: 62px;
+	}
+	@include res(l) {
+		top: 60px;
+		left: 12px;
+	}
+	@include res(m) {
+		top: 40px;
+	}
+	li {
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin-right: 12px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		background: #fff;
+		@include res(m) {
+			width: 14px;
+			height: 14px;
+			margin-right: 8px;
+		}
+		@include res(s) {
+			width: 12px;
+			height: 12px;
+		}
+		&:hover {
+			border-color: $pink;
+		}
+		button {
+			display: none;
+		}
+		&.slick-active {
+			border-color: $pink;
+			background: $pink;
+			&:hover {
+				border-color: $pink;
+			}
+		}
+	}
+}

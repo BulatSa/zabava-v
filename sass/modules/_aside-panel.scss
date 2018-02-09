@@ -69,7 +69,7 @@
 	-webkit-overflow-scrolling: touch;
 	z-index: 10;
 	@include res(xl) {
-		width: 260px;
+		width: 240px;
 	}
 	@include res(l) {
 		width: 300px;
@@ -157,6 +157,7 @@
 	cursor: pointer;
 	transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
 	@include res(xl) {
+		padding-left: $pad-xs;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		font-size: 18px;
@@ -260,6 +261,7 @@
 		padding-right: $pad-m;
 		font-size: 18px;
 		@include res(xl) {
+			padding-left: $pad-xs;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			font-size: 16px;
@@ -296,6 +298,7 @@
 		padding-right: $pad-xs;
 		font-size: 16px;
 		@include res(xl) {
+			padding-left: 35px;
 			font-size: 14px;
 		}
 		@include res(l) {
@@ -357,7 +360,9 @@
 	margin-bottom: $pad-s;
 	padding-left: $pad-s;
 	padding-right: $pad-s;
-
+	@include res(xl) {
+		padding-left: $pad-xs;
+	}
 	@include res(l) {
 		padding-left: 12px;
 		padding-right: 12px;
@@ -406,7 +411,7 @@
 
 .a-menu__nav {
 	display: none;
-	@include res(m) {
+	@include res(l) {
 		display: block;
 		margin-top: 10px;
 		margin-left: 12px;

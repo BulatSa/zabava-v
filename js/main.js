@@ -228,6 +228,26 @@ $(function(){
  ***********************/
 
 
+/***********************
+Slick BEGIN
+***********************/
+$('#big-slider').slick({
+	adaptiveHeight: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	//autoplay: true,
+	infinite: false,
+	arrows: false,
+	//nextArrow: '.big-slider-nav .i-nav-right',
+	//prevArrow: '.big-slider-nav .i-nav-left',
+	dots: true,
+	dotsClass: 'big-slider-dots'
+});
+/***********************
+Slick END
+***********************/
+
+
 
 /***********************
  Прокрутка к секциям BEGIN

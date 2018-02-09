@@ -1,7 +1,7 @@
 body {
 	padding-left: 300px;
 	@include res(xl) {
-		padding-left: 260px;
+		padding-left: 240px;
 	}
 	@include res(l) {
 		padding-top: 40px;

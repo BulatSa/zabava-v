@@ -11,11 +11,17 @@ a {
 	text-decoration: none;
 }
 
-h1, .h1 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	margin-bottom: 0.4em;
 	font-family: $font-head;
-	font-size: 60px;
 	text-transform: uppercase;
 	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 0.06em;
+}
+
+h1, .h1 {
+	font-size: 60px;
 	@include res(xl) {
 		font-size: 54px;
 	}
@@ -31,10 +37,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-family: $font-head;
 	font-size: 54px;
-	text-transform: uppercase;
-	font-weight: bold;
 	@include res(xl) {
 		font-size: 48px;
 	}
@@ -50,10 +53,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-family: $font-head;
 	font-size: 36px;
-	text-transform: uppercase;
-	font-weight: bold;
 	@include res(xl) {
 		font-size: 28px;
 	}
@@ -69,10 +69,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-	font-family: $font-head;
 	font-size: 26px;
-	text-transform: uppercase;
-	font-weight: bold;
 	@include res(xl) {
 		font-size: 24px;
 	}
@@ -87,21 +84,42 @@ h4, .h4 {
 	}
 }
 
-h5, .h5{
-	font-family: $font-head;
+h5, .h5 {
+	margin-bottom: $pad-xs;
 	font-size: 22px;
-	text-transform: uppercase;
-	font-weight: bold;
 	@include res(xl) {
+		margin-bottom: 15px;
 		font-size: 20px;
 	}
 	@include res(l) {
+		margin-bottom: $pad-xxs;
 		font-size: 16px;
 	}
 	@include res(s) {
 		font-size: 14px;
 	}
 	@include res(xs) {
+		margin-bottom: 5px;
 		font-size: 12px;
+	}
+}
+
+.user-content {
+	font-size: 18px;
+	line-height: 1.3;
+	@include res(l) {
+		font-size: 16px;
+	}
+	@include res(s) {
+		font-size: 14px;
+	}
+	p {
+		font-size: 18px;
+		@include res(l) {
+			font-size: 16px;
+		}
+		@include res(s) {
+			font-size: 14px;
+		}
 	}
 }
