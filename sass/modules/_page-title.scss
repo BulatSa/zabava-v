@@ -1,0 +1,15 @@
+.page-title {
+	max-width: 960px;
+	margin: 0 auto $pad-l;
+	text-align: center;
+	@include res(l) {
+		margin-bottom: $pad-m;
+	}
+	@include res(m) {
+		margin-bottom: $pad-s;
+	}
+	@include res(s) {
+		margin-bottom: $pad-xs;
+	}
+}
+.page-title__descr {}

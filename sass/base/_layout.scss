@@ -44,6 +44,23 @@ body {
 }
 
 .def-sec {
+	padding-top: $pad-xxl;
+	padding-bottom: $pad-xxl;
+	@include res(xl) {
+		padding-top: $pad-l;
+		padding-bottom: $pad-l;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+}
+
+.def-sec-waved {
 	padding-top: $pad-l;
 	padding-bottom: $pad-l;
 	@include res(xl) {
@@ -51,11 +68,11 @@ body {
 		padding-bottom: $pad-m;
 	}
 	@include res(l) {
-		padding-top: $pad-s;
-		padding-bottom: $pad-s;
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
 	}
 	@include res(s) {
-		padding-top: $pad-xs;
-		padding-bottom: $pad-xs;
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
 	}
 }

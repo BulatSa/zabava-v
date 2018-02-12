@@ -1,0 +1,100 @@
+.slider-dots {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	li {
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin-right: 12px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		background: #fff;
+		@include res(m) {
+			width: 14px;
+			height: 14px;
+			margin-right: 8px;
+		}
+		@include res(s) {
+			width: 12px;
+			height: 12px;
+		}
+		&:hover {
+			border-color: $pink;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		button {
+			display: none;
+		}
+		&.slick-active {
+			border-color: $pink;
+			background: $pink;
+			&:hover {
+				border-color: $pink;
+			}
+		}
+	}
+}
+
+.slider-next, .slider-prev {
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 0 transparentize($link-color, 0.5);
+	background: #fff;
+	outline: none;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	z-index: 5;
+	@include res(s) {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+	}
+	&:hover {
+		border-color: $pink;
+		box-shadow: 0 0 10px 0 transparentize($pink, 0.5);
+	}
+	&.slick-disabled {
+		opacity: 0.2;
+		pointer-events: none;
+	}
+}
+
+.slider-next {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	border-radius: 70% 30% 70% 30%;
+	transform: translate3d(0,-50%,0);
+	@include res(l) {
+		right: 15px;
+	}
+	@include res(s) {
+		border-radius: 70% 40% 70% 40%;
+	}
+}
+
+.slider-prev {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	border-radius: 30% 70% 30% 70%;
+	transform: translate3d(0,-50%,0);
+	@include res(l) {
+		left: 15px;
+	}
+	@include res(s) {
+		border-radius: 40% 70% 40% 70%;
+	}
+}
+
+.slick-slide {
+	outline: none;
+}

@@ -66,6 +66,19 @@
 			background: $pink;
 		}
 	}
+	&--trans {
+		font-size: 16px;
+		text-shadow: none;
+		border: 2px solid $text-color;
+		box-shadow: none;
+		background: transparent;
+		&:hover {
+			border-color: $pink;
+			color: #fff;
+			box-shadow: none;
+			background: $pink;
+		}
+	}
 }
 
 button::-moz-focus-inner {

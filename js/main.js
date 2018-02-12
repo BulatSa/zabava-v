@@ -237,11 +237,30 @@ $('#big-slider').slick({
 	slidesToScroll: 1,
 	//autoplay: true,
 	infinite: false,
-	arrows: false,
-	//nextArrow: '.big-slider-nav .i-nav-right',
-	//prevArrow: '.big-slider-nav .i-nav-left',
+	arrows: true,
+	nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
+	prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>',
 	dots: true,
-	dotsClass: 'big-slider-dots'
+	dotsClass: 'slider-dots'
+});
+
+$('#animators-slider').slick({
+	adaptiveHeight: true,
+	slidesToShow: 4,
+	slidesToScroll: 4,
+	//autoplay: true,
+	infinite: false,
+	arrows: true,
+	nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
+	prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>',
+	responsive: [
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+	}]
 });
 /***********************
 Slick END

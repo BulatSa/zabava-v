@@ -1,0 +1,114 @@
+.work-places-sec {
+	background: url('../img/work-places/bg-work-places.jpg') no-repeat center top, #f6f7fb;
+	background-size: 100% auto;
+}
+
+.work-places {
+	.page-title {
+		padding-left: $pad-m;
+		padding-right: $pad-m;
+		@include res(l) {
+			padding-left: $pad-xxl;
+			padding-right: $pad-xxl;
+		}
+		@include res(s) {
+			padding-left: $pad-l;
+			padding-right: $pad-l;
+		}
+		@include res(xs) {
+			padding-left: $pad-xs;
+			padding-right: $pad-xs;
+		}
+	}
+}
+
+.work-places__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.work-places__item-wrap {
+	width: 33.33333%;
+	margin-bottom: $pad-s;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	@include res(s) {
+		width: 100%;
+		margin-bottom: $pad-xs;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.work-places__item {
+	position: relative;
+	display: block;
+	min-height: 340px;
+	padding-top: 90px;
+	padding-right: $pad-xs;
+	padding-left: $pad-s;
+	padding-bottom: $pad-s;
+	border-radius: 20px;
+	box-shadow: 0 0 15px 0 transparentize($dark-blue,1);
+	background-position: center center;
+	background-size: cover;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	@include res(xl) {
+		min-height: 290px;
+		padding-top: 50px;
+		padding-left: $pad-xs;
+		background-position: center center;
+	}
+	@include res(l) {
+		min-height: 260px;
+		padding-top: 40px;
+		padding-bottom: $pad-xs;
+	}
+	@include res(m) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@include res(s) {
+		min-height: 190px;
+		padding-top: 30px;
+		padding-left: $pad-xxs;
+		padding-right: $pad-xxs;
+	}
+	&:hover {
+		box-shadow: 0 0 15px 0 transparentize($dark-blue,0.5);
+	}
+}
+
+.work-places__item-title {
+	display: block;
+	max-width: 290px;
+	span {
+		font-family: $font-head;
+		letter-spacing: 0.05em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	b {
+		display: block;
+	}
+}
+
+.work-places__item-descr {
+	display: block;
+	max-width: 290px;
+	font-size: 14px;
+	@include res(s) {
+		max-width: 250px;
+	}
+}
+
+.work-places__all {
+	padding-top: $pad-xs;
+	text-align: center;
+	@include res(l) {
+		padding-top: $pad-xxs;
+	}
+}

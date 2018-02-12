@@ -107,19 +107,25 @@ h5, .h5 {
 .user-content {
 	font-size: 18px;
 	line-height: 1.3;
+	@include res(xl) {
+		font-size: 17px;
+	}
 	@include res(l) {
 		font-size: 16px;
 	}
 	@include res(s) {
 		font-size: 14px;
 	}
-	p {
-		font-size: 18px;
-		@include res(l) {
-			font-size: 16px;
+	h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
 		}
-		@include res(s) {
-			font-size: 14px;
+	}
+	p,ul,ol,table,img,blockquote,q {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }

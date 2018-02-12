@@ -1,0 +1,10 @@
+.wave-white-top {
+  position: relative; }
+  .wave-white-top:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: url("../img/waves/"); }
