@@ -62,8 +62,8 @@
 		box-shadow: 0 0 10px 0 transparentize($pink, 0.5);
 	}
 	&.slick-disabled {
-		opacity: 0.2;
-		pointer-events: none;
+		opacity: 0.15;
+		cursor: default;
 	}
 }
 

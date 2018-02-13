@@ -267,6 +267,28 @@ Slick END
 ***********************/
 
 
+/***********************
+Our Offers Tabs BEGIN
+***********************/
+$(document).ready(function() {
+	if($('.our-offers__nav').length) {
+		$('.our-offers__nav a').on('click', function(e){
+			e.preventDefault();
+			var thisLink = $(this).data('link');
+
+			$('.our-offers__nav a').not($(this)).removeClass('active');
+			$(this).addClass('active');
+
+			$('.our-offers__list .our-offers__item').removeClass('active');
+			$('.our-offers__list').find('#'+thisLink).addClass('active');
+		})
+	}
+});
+/***********************
+Our Offers Tabs END
+***********************/
+
+
 
 /***********************
  Прокрутка к секциям BEGIN

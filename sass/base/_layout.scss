@@ -76,3 +76,37 @@ body {
 		padding-bottom: $pad-s;
 	}
 }
+
+.def-sec-waved-top {
+	padding-top: $pad-l;
+	padding-bottom: $pad-xxl;
+	@include res(xl) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-l;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+}
+
+.def-sec-waved-bottom {
+	padding-top: $pad-xxl;
+	padding-bottom: $pad-l;
+	@include res(xl) {
+		padding-top: $pad-l;
+		padding-bottom: $pad-m;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+}

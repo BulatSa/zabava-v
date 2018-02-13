@@ -48,6 +48,9 @@ i {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.i-play:before {
+	content: "\e907";
+}
 .i-rocket:before {
 	content: "\e906";
 }

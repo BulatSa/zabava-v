@@ -23,6 +23,16 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	margin-left: -$gutter;
+	margin-gutter: -$gutter;
+	@include res(l) {
+		margin-left: -$gutter-mobile;
+		margin-right: -$gutter-mobile;
+	}
+	&--slided {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .animators__item-wrap {
@@ -30,6 +40,9 @@
 	padding-bottom: $pad-s;
 	padding-left: $gutter;
 	padding-right: $gutter;
+	@include res(m) {
+		padding-bottom: $pad-xs;
+	}
 	@include res(xs) {
 		width: 50%;
 	}
@@ -40,7 +53,10 @@
 	text-align: center;
 	&:hover {
 		span {
-			color: $link-color;
+			opacity: 1;
+		}
+		.h5 {
+
 		}
 	}
 	img {
@@ -49,8 +65,24 @@
 		margin: 0 auto $pad-xs;
 	}
 	span {
-		display: block;
+		color: $link-color;
+		opacity: 0;
+		font-size: 14px;
 		transition: all 0.3s ease;
+		@include res(l) {
+			opacity: 1;
+		}
+		@include res(s) {
+			font-size: 12px;
+		}
+	}
+	.h5 {
+		display: block;
+		margin-bottom: 5px;
+		transition: all 0.3s ease;
+		@include res(l) {
+			margin-bottom: 0px;
+		}
 	}
 }
 

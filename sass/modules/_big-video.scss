@@ -1,0 +1,34 @@
+.big-video-sec {
+	background: url('../img/big-video/bg-big-video.jpg') center bottom, #05416b;
+	@include res(xl) {
+		background: url('../img/big-video/bg-big-video.jpg') center center, #05416b;
+	}
+	@include res(s) {
+		background: url('../img/big-video/bg-big-video-mobile.jpg') center center, #05416b;
+		background-size: auto 500px;
+	}
+}
+
+.big-video {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	text-align: center;
+	.h2 {
+		max-width: 720px;
+	}
+	.video-play {
+		margin-top: 110px;
+		@include res(s) {
+			margin-top: 50px;
+		}
+	}
+	.btn {
+		margin-top: 180px;
+		@include res(s) {
+			margin-top: 90px;
+		}
+	}
+}
