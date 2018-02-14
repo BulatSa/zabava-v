@@ -58,12 +58,21 @@
 		font-size: 14px;
 	}
 	&:hover {
+		color: #fff;
 		border-color: $pink;
-		box-shadow: 0 0 10px 0 transparentize($pink, 0.5);
+		border-radius: 50%;
+		box-shadow: 0 0 5px 0 transparentize(#000, 0.9);
+		background: $pink;
 	}
 	&.slick-disabled {
 		opacity: 0.15;
 		cursor: default;
+		&:hover {
+			color: $text-color;
+			border-color: #fff;
+			box-shadow: 0 0 10px 0 transparentize($link-color, 0.5);
+			background: #fff;
+		}
 	}
 }
 

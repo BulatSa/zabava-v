@@ -11,5 +11,14 @@
 	@include res(s) {
 		margin-bottom: $pad-xs;
 	}
+	&--mini {
+		margin: 0 auto $pad-s;
+		@include res(l) {
+			margin-bottom: $pad-xs;
+		}
+		@include res(s) {
+			margin-bottom: $pad-xxs;
+		}
+	}
 }
 .page-title__descr {}

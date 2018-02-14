@@ -60,6 +60,32 @@ body {
 	}
 }
 
+.def-sec-top {
+	padding-top: $pad-xxl;
+	@include res(xl) {
+		padding-top: $pad-l;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+	}
+}
+
+.def-sec-bottom {
+	padding-bottom: $pad-xxl;
+	@include res(xl) {
+		padding-bottom: $pad-l;
+	}
+	@include res(l) {
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-bottom: $pad-s;
+	}
+}
+
 .def-sec-waved {
 	padding-top: $pad-l;
 	padding-bottom: $pad-l;

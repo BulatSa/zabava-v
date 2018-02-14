@@ -1,0 +1,121 @@
+.additions-sec {
+	background: url("../img/addictions/bg-addictions.jpg") no-repeat center top, #f6f7fb;
+}
+
+.additions {
+	.page-title {
+		max-width: 800px;
+		padding-top: $pad-xs;
+	}
+}
+
+.additions__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	overflow: hidden;
+	@include res(l) {
+		margin-left: -$gutter-mobile;
+		margin-right: -$gutter-mobile;
+	}
+}
+
+.additions__item {}
+
+.addition {
+	display: block;
+	width: 25%;
+	padding-top: $pad-xs;
+	padding-bottom: $pad-xs;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	@include res(l) {
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	@include res(s) {
+		width: 33.33333%;
+	}
+	@include res(xs) {
+		width: 50%;
+		padding-top: $pad-xxs;
+		padding-bottom: $pad-xxs;
+	}
+	&:hover {
+		.addition__img {
+			&:before,&:after {
+				opacity: 1;
+				transform: scale(1.1) rotate(0) translate3d(0,0,0);
+			}
+		}
+		.addition__descr {
+			opacity: 1;
+		}
+	}
+	.h5 {
+		display: block;
+		text-align: center;
+	}
+}
+
+.addition__img {
+	position: relative;
+	display: block;
+	margin-bottom: $pad-s;
+	@include res(l) {
+		margin-bottom: $pad-xs;
+	}
+	@include res(m) {
+		margin-bottom: $pad-xxs;
+	}
+	&:before,&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+		opacity: 0;
+		@include res(l) {
+			content: none;
+		}
+	}
+	&:before {
+		border-radius: 70% 30% 70% 30%;
+		transform: scale(0.1) translate3d(0,0,0) rotate(160deg);
+		transition-delay: 0.1s;
+		background: #85e5f9;
+	}
+	&:after {
+		border-radius: 30% 70% 30% 70%;
+		transform: scale(0.2) translate3d(0,0,0) rotate(-120deg);
+		background: #88eaff;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		border-radius: 20px;
+	}
+}
+
+.addition__descr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: $pad-s;
+	font-size: 14px;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	z-index: 2;
+	@include res(xl) {
+		padding: $pad-xs;
+	}
+	@include res(l) {
+		display: none;
+	}
+}

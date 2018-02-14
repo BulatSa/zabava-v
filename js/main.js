@@ -92,12 +92,38 @@ function init_fancy() {
 		backFocus: false,
 		animationEffect: "zoom-in-out",
 		animationDuration: 300,
+		lang : 'ru',
+		i18n : {
+			'ru' : {
+				CLOSE       : 'Закрыть',
+				NEXT        : 'Дальше',
+				PREV        : 'Назад',
+				ERROR       : 'Не удается загрузить. <br/> Попробуйте позднее.',
+				PLAY_START  : 'Начать слайдшоу',
+				PLAY_STOP   : 'Остановить слайдшоу',
+				FULL_SCREEN : 'На весь экран',
+				THUMBS      : 'Превью'
+			}
+		},
 		transitionEffect: "slide"
 	});
 	$('.fancy-map').fancybox({
 		toolbar: false,
 		smallBtn: true,
 		backFocus: false,
+		lang : 'ru',
+		i18n : {
+			'ru' : {
+				CLOSE       : 'Закрыть',
+				NEXT        : 'Дальше',
+				PREV        : 'Назад',
+				ERROR       : 'Не удается загрузить. <br/> Попробуйте позднее.',
+				PLAY_START  : 'Начать слайдшоу',
+				PLAY_STOP   : 'Остановить слайдшоу',
+				FULL_SCREEN : 'На весь экран',
+				THUMBS      : 'Превью'
+			}
+		},
 		animationEffect: "zoom-in-out",
 		animationDuration: 300,
 		transitionEffect: "slide"
@@ -112,6 +138,19 @@ function init_fancy__video() {
 		animationEffect: "zoom-in-out",
 		animationDuration: 300,
 		transitionEffect: "slide",
+		lang : 'ru',
+		i18n : {
+			'ru' : {
+				CLOSE       : 'Закрыть',
+				NEXT        : 'Дальше',
+				PREV        : 'Назад',
+				ERROR       : 'Не удается загрузить. <br/> Попробуйте позднее.',
+				PLAY_START  : 'Начать слайдшоу',
+				PLAY_STOP   : 'Остановить слайдшоу',
+				FULL_SCREEN : 'На весь экран',
+				THUMBS      : 'Превью'
+			}
+		},
 		youtube: {
 			controls: 1,
 			showinfo: 0,
@@ -261,6 +300,17 @@ $('#animators-slider').slick({
 				slidesToScroll: 2
 			}
 	}]
+});
+
+$('#video-slider').slick({
+	adaptiveHeight: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	//autoplay: true,
+	infinite: false,
+	arrows: true,
+	nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
+	prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>'
 });
 /***********************
 Slick END

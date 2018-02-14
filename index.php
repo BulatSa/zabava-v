@@ -340,8 +340,91 @@
 <section class="big-video-sec def-sec-waved-top wave-blue-top">
 	<div class="big-video container">
 		<p class="h2">Мы исполняем детские мечты</p>
-		<a href="#" class="video-play"><i class="i-play"></i></a>
-		<a href="#" class="btn">Оставить заявку</a>
+		<a href="https://www.youtube.com/watch?v=mD2xXNg_Vy8" class="video-play fancy-video"><i class="i-play"></i></a>
+		<a href="#" class="btn fancy" data-src="#modal-order">Оставить заявку</a>
+	</div>
+</section>
+
+
+<section class="additions-sec def-sec-top">
+	<div class="additions container">
+		<div class="page-title page-title--mini">
+			<p class="h2">Добавки к вашему празднику</p>
+		</div>
+		<div class="additions__list">
+			<div class="additions__item addition">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/addictions/addiction-1.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">Шоколадный Шоколадный фонтан</span>
+				</a>
+			</div>
+			<div class="additions__item addition">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/addictions/addiction-1.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">Шоколадный фонтан</span>
+				</a>
+			</div>
+			<div class="additions__item addition">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/addictions/addiction-1.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">Шоколадный фонтан</span>
+				</a>
+			</div>
+			<div class="additions__item addition">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/addictions/addiction-1.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">Шоколадный фонтан</span>
+				</a>
+			</div>
+		</div>
+		<div class="btn-center">
+			<a href="#" class="btn btn--trans">все добавки</a>
+		</div>
+	</div>
+</section>
+
+
+<section class="video-slider-sec">
+	<div class="video-slider container">
+		<div class="video-slider__title">
+			<p class="h2">Осторожно!</p>
+			<span class="h3">ваш ребенок может лопнуть от эмоций</span>
+		</div>
+		<div class="video-slider__box" id="video-slider">
+			<div class="video-slider__item">
+				<a href="https://www.youtube.com/watch?v=mD2xXNg_Vy8" class="fancy-video">
+					<img src="img/video-slider/slide-1.jpg" alt="">
+					<span class="video-play"><i class="i-play"></i></span>
+				</a>
+			</div>
+			<div class="video-slider__item">
+				<a href="https://www.youtube.com/watch?v=mD2xXNg_Vy8" class="fancy-video">
+					<img src="img/video-slider/slide-1.jpg" alt="">
+					<span class="video-play"><i class="i-play"></i></span>
+				</a>
+			</div>
+			<div class="video-slider__item">
+				<a href="https://www.youtube.com/watch?v=mD2xXNg_Vy8" class="fancy-video">
+					<img src="img/video-slider/slide-1.jpg" alt="">
+					<span class="video-play"><i class="i-play"></i></span>
+				</a>
+			</div>
+		</div>
+		<div class="btn-center">
+			<a href="#" class="btn fancy" data-src="#modal-order">Хочу так же!</a>
+		</div>
 	</div>
 </section>
 
