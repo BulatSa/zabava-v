@@ -306,6 +306,8 @@ $('#video-slider').slick({
 	adaptiveHeight: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
+	centerMode: true,
+	centerPadding: '0',
 	//autoplay: true,
 	infinite: false,
 	arrows: true,
@@ -369,3 +371,47 @@ $(function () {
 /***********************
  Waypoints END
  ***********************/
+
+
+/**************************************************
+ Google Maps
+ ***************************************************/
+// gmaps
+$(document).ready(function(){
+	if ($('#contact-map').length) {
+		google.maps.event.addDomListener(window, 'load', initMap);
+
+		function initMap() {
+			var latLng= {};
+			latLng.lat = 55.746218;
+			if ($(window).width() < 740) {
+				latLng.lng = 37.509164;
+			} else {
+				latLng.lng = 37.509164;
+			}
+			var mapOptions = {
+				zoom: 16,
+				scrollwheel: false,
+				mapTypeControl: false,
+				zoomControlOptions: {
+					position: google.maps.ControlPosition.LEFT_CENTER
+				},
+				center: new google.maps.LatLng(latLng.lat, latLng.lng)
+			};
+
+			var mapElement = document.getElementById('contact-map');
+
+			var map = new google.maps.Map(mapElement, mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(55.746218, 37.509164),
+				map: map,
+				title: 'Самара ул. Парковый переулок,  дом 5',
+				icon: '/img/map-bubble.svg'
+			});
+		}
+	}
+});
+/**************************************************
+ End Google Maps
+ ***************************************************/

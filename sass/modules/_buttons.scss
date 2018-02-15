@@ -2,6 +2,7 @@
 	display: inline-block;
 	position: relative;
 	padding: 14px 35px;
+	min-width: 220px;
 	vertical-align: top;
 	font-size: 20px;
 	font-family: $font-head;
@@ -23,6 +24,7 @@
 	//transform: translate3d(0,0,0);
 	background: linear-gradient(to bottom, #f9cddf,#ff99c7);
 	@include res(xl) {
+		min-width: initial;
 		padding: 12px 30px;
 		font-size: 18px;
 	}
@@ -44,6 +46,7 @@
 	}
 
 	&--mini {
+		min-width: initial;
 		padding: 14px 30px;
 		font-size: 16px;
 		@include res(xl) {
