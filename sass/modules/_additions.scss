@@ -1,5 +1,8 @@
 .additions-sec {
 	background: url("../img/addictions/bg-addictions.jpg") no-repeat center top, #f6f7fb;
+	@include res(s) {
+		background: #f6f7fb;
+	}
 }
 
 .additions {
@@ -21,7 +24,9 @@
 	}
 }
 
-.additions__item {}
+.additions__item {
+
+}
 
 .addition {
 	display: block;
@@ -30,6 +35,9 @@
 	padding-bottom: $pad-xs;
 	padding-left: $gutter;
 	padding-right: $gutter;
+	opacity: 0;
+	transform: translate3d(0,50px,0);
+	transition: all 0.5s ease;
 	@include res(l) {
 		padding-left: $gutter-mobile;
 		padding-right: $gutter-mobile;
@@ -37,10 +45,9 @@
 		padding-bottom: 15px;
 	}
 	@include res(s) {
-		width: 33.33333%;
+		width: 50%;
 	}
 	@include res(xs) {
-		width: 50%;
 		padding-top: $pad-xxs;
 		padding-bottom: $pad-xxs;
 	}
@@ -54,6 +61,10 @@
 		.addition__descr {
 			opacity: 1;
 		}
+	}
+	&.animated {
+		opacity: 1;
+		transform: translate3d(0,0,0);
 	}
 	.h5 {
 		display: block;

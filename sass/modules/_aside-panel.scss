@@ -98,9 +98,6 @@
 	padding-top: $pad-s;
 	padding-bottom: $pad-xs;
 	@include res(xl) {
-		padding-top: $pad-xs;
-	}
-	@include res(l) {
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
@@ -262,9 +259,9 @@
 		font-size: 18px;
 		@include res(xl) {
 			padding-left: $pad-xs;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			font-size: 16px;
+			padding-top: 9px;
+			padding-bottom: 9px;
+			font-size: 15px;
 		}
 		@include res(l) {
 			margin-bottom: 2px;
@@ -283,7 +280,7 @@
 	overflow: hidden;
 	//transition: opacity 0.3s ease;
 	@include res(xl) {
-		max-height: 230px;
+		max-height: 225px;
 	}
 	@include res(l) {
 		max-height: 220px;
@@ -335,6 +332,7 @@
 	height: 100%;
 	padding: 0!important;
 	opacity: 0;
+	cursor: pointer;
 	@include res(l) {
 		width: 35px;
 		font-size: 12px;
@@ -380,9 +378,10 @@
 		font-family: $font-head;
 		font-size: 26px;
 		letter-spacing: 0.06em;
+		white-space: nowrap;
 		transition: all 0.3s ease;
 		@include res(xl) {
-			font-size: 22px;
+			font-size: 20px;
 		}
 		@include res(l) {
 			font-size: 18px;

@@ -24,6 +24,18 @@
 		&:hover {
 			border-color: $pink;
 		}
+		&:nth-child(-n+2) {
+			border-radius: 45% 55% 45% 55%;
+		}
+		&:nth-child(-n+1) {
+			border-radius: 42% 58% 42% 58%;
+		}
+		&:nth-last-child(-n+2) {
+			border-radius: 55% 45% 55% 45%;
+		}
+		&:nth-last-child(-n+1) {
+			border-radius: 58% 42% 58% 42%;
+		}
 		&:last-child {
 			margin-right: 0;
 		}
@@ -64,6 +76,12 @@
 		box-shadow: 0 0 5px 0 transparentize(#000, 0.9);
 		background: $pink;
 	}
+	&:focus {
+		border-color: $pink;
+	}
+	i {
+		display: block;
+	}
 	&.slick-disabled {
 		opacity: 0.15;
 		cursor: default;
@@ -72,6 +90,9 @@
 			border-color: #fff;
 			box-shadow: 0 0 10px 0 transparentize($link-color, 0.5);
 			background: #fff;
+		}
+		&:focus {
+			border-color: #fff;
 		}
 	}
 }
@@ -88,6 +109,15 @@
 	@include res(s) {
 		border-radius: 70% 40% 70% 40%;
 	}
+	&.slick-disabled {
+		border-radius: 70% 30% 70% 30%;
+		@include res(s) {
+			border-radius: 70% 40% 70% 40%;
+		}
+	}
+	i {
+		margin-right: -2px;
+	}
 }
 
 .slider-prev {
@@ -102,8 +132,20 @@
 	@include res(s) {
 		border-radius: 40% 70% 40% 70%;
 	}
+	&.slick-disabled {
+		border-radius: 30% 70% 30% 70%;
+		@include res(s) {
+			border-radius: 40% 70% 40% 70%;
+		}
+	}
+	i {
+		margin-left: -2px;
+	}
 }
 
 .slick-slide {
 	outline: none;
+	&>* {
+		outline: none;
+	}
 }

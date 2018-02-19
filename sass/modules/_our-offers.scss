@@ -1,4 +1,8 @@
-.our-offers-sec {}
+.our-offers-sec {
+	@include res(m) {
+		background: linear-gradient(135deg,#f3afd0 40%,#82d5e7) !important;
+	}
+}
 
 .our-offers {}
 
@@ -24,6 +28,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 	@include res(m) {
 		flex-wrap: wrap;
 	}
@@ -38,13 +43,14 @@
 		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
+		line-height: 1.2;
 		border: 2px solid transparent;
 		border-radius: 30px;
 		transition: all 0.3s ease;
 		@include res(xl) {
 			margin-left: 3px;
 			margin-right: 3px;
-			padding: 10px 16px;
+			padding: 10px 14px;
 			font-size: 14px;
 		}
 		@include res(l) {
@@ -53,6 +59,8 @@
 		}
 		@include res(m) {
 			width: calc(25% - 4px);
+			padding: 8px 16px;
+			margin-bottom: 4px;
 			margin-left: 2px;
 			margin-right: 2px;
 		}
@@ -81,20 +89,30 @@
 	right: 0;
 	width: 100%;
 	height: 100%;
+	min-height: 870px;
 	padding-top: 340px;
-	padding-bottom: 180px;
+	padding-bottom: 100px;
 	opacity: 0;
 	background-position: center top;
 	background-size: cover;
 	transition: all 0.3s ease;
+	@include res(xl) {
+		min-height: 720px;
+		padding-bottom: 80px;
+	}
 	@include res(l) {
+		min-height: 600px;
 		padding-top: 250px;
-		padding-bottom: 160px;
+		padding-bottom: 60px;
 	}
 	@include res(m) {
-		padding-bottom: 120px;
+		min-height: 400px;
+		padding-bottom: 60px;
+		background: none;
+		background-image: none!important;
 	}
 	@include res(s) {
+		min-height: initial;
 		padding-top: 220px;
 		padding-bottom: 60px;
 	}
@@ -115,6 +133,9 @@
 			height: 100%;
 			background: transparentize(#fff, 0.45);
 			z-index: 0;
+		}
+		@include res(m) {
+			content: none;
 		}
 	}
 	&.active {
@@ -163,6 +184,7 @@
 	span {}
 	p {
 		font-size: 14px;
+		line-height: 1.2;
 		@include res(l) {
 			font-size: 12px;
 		}

@@ -33,7 +33,7 @@
 			<div class="footer__subscribe">
 				<p class="h5">будьте в курсе новостей</p>
 				<form class="form-subscribe ajax-form">
-					<input type="text" class="input-text input-text--subscr" placeholder="введите свой e-mail" data-req="true">
+					<input type="text" class="input-text input-text--subscr" placeholder="Ваш e-mail" data-req="true">
 					<button><i class="i-rocket"></i></button>
 				</form>
 				<span>Подпишиесь и узнавайте обо всем первыми</span>
@@ -65,9 +65,9 @@
 		<p>Заказать обратный звонок</p>
 		<p>Оставьте заявку и наш администратор свяжется<br>с&nbsp;Вами в течение 10 минут</p>
 		<form class="ajax-form">
-			<input type="text" name="user_name" placeholder="Введите имя" data-label="Имя пользователя" class="text-input" >
-			<input type="email" name="user_email" placeholder="Введите e-mail*" data-label="Email" class="text-input" data-req="true">
-			<input type="tel" name="user_tel" placeholder="Введите телефон*" data-label="Телефон"  class="text-input" data-req="true">
+			<input type="text" name="user_name" placeholder="имя" data-label="Имя пользователя" class="text-input" >
+			<input type="email" name="user_email" placeholder="e-mail*" data-label="Email" class="text-input" data-req="true">
+			<input type="tel" name="user_tel" placeholder="телефон*" data-label="Телефон"  class="text-input" data-req="true">
 			<input type="file" name="user_file" data-label="Файл">
 			<input type="hidden" value="Новая заявка" name="form_subject">
 			<button type="submit" class="btn">Отправить</button>
