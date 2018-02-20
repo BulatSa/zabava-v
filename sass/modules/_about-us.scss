@@ -14,6 +14,9 @@
 		margin-left: -$gutter-mobile;
 		margin-right: -$gutter-mobile;
 	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
 }
 
 .about-us__benefit {
@@ -21,8 +24,20 @@
 	width: 25%;
 	padding-left: $gutter;
 	padding-right: $gutter;
+	transition: all 0.5s ease;
+	opacity: 0;
+	transform: translate3d(0,50px,0);
+	@include res(l) {
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
+	}
 	@include res(s) {
 		width: 50%;
+		padding-bottom: $pad-s;
+	}
+	&.animated {
+		opacity: 1;
+		transform: translate3d(0,0,0);
 	}
 }
 
@@ -30,6 +45,7 @@
 	img {
 		max-width: 100%;
 		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -47,10 +63,16 @@
 		margin-left: -$gutter-mobile;
 		margin-right: -$gutter-mobile;
 	}
+	@include res(s) {
+		padding-bottom: $pad-s;
+	}
 	.h3 {
 		width: 100%;
 		padding-bottom: $pad-xs;
 		text-align: center;
+		@include res(s) {
+			padding-bottom: 0;
+		}
 	}
 }
 
@@ -69,6 +91,9 @@
 	}
 	p {
 		font-size: 14px;
+		@include res(s) {
+			font-size: 12px;
+		}
 	}
 }
 
@@ -94,12 +119,27 @@
 	padding-right: $gutter;
 	padding-top: $pad-l;
 	padding-bottom: $pad-m;
+	opacity: 0;
+	transform: translate3d(0,50px,0);
+	transition: all 0.5s ease;
 	@include res(xl) {
 		padding-top: $pad-m;
 		padding-bottom: $pad-s;
 	}
 	@include res(l) {
 		padding-top: $pad-s;
+	}
+	@include res(s) {
+		width: 25%;
+		padding-top: $pad-xs;
+		padding-bottom: $pad-xs;
+	}
+	@include res(xs) {
+		width: 33.33333%;
+		padding-bottom: $pad-xxs;
+	}
+	@include res(xxs) {
+		width: 50%;
 	}
 	&:after {
 		content: '';
@@ -133,7 +173,32 @@
 			}
 		}
 	}
-	&--join {}
+	&.animated {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+	&--join {
+		.about-us__member-img {
+			img {
+				border-radius: 0;
+			}
+		}
+		&:hover {
+			.about-us__member-img {
+				.first {
+					opacity: 1;
+				}
+			}
+			.about-us__member-info {
+				span {
+					color: $pink;
+				}
+				p {
+					color: $light-blue;
+				}
+			}
+		}
+	}
 }
 
 .about-us__member-img {
@@ -169,8 +234,10 @@
 	span {
 		display: block;
 		margin-bottom: 5px;
+		transition: all 0.3s ease;
 	}
 	p {
 		font-size: 14px;
+		transition: all 0.3s ease;
 	}
 }

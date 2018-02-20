@@ -1,0 +1,86 @@
+.consist-sec {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 800px;
+	padding-bottom: 150px;
+	background: url("../img/consist/bg-consist.jpg") no-repeat center center;
+	background-size: cover;
+	@include res(xl) {
+		min-height: 620px;
+	}
+	@include res(l) {
+		min-height: 540px;
+	}
+	@include res(s) {
+		min-height: initial;
+		padding-bottom: 100px;
+		background: url("../img/consist/bg-consist-mobile.jpg") no-repeat center center;
+		background-size: auto 100%;
+	}
+	@include res(xs) {
+
+	}
+	.video-play {
+		position: absolute;
+		left: 50%;
+		bottom: -30px;
+		transform: translate3d(-50%,0,0);
+		z-index: 2;
+		@include res(l) {
+			bottom: -15px;
+		}
+	}
+}
+
+.consist {
+
+}
+
+.consist__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.consist__item {
+	width: 25%;
+	padding-left: 32px;
+	padding-right: 32px;
+	text-align: center;
+	@include res(l) {
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
+	}
+	@include res(s) {
+		width: 50%;
+		padding-bottom: $pad-xs;
+	}
+	span {
+		margin-bottom: 5px;
+		@include res(s) {
+			margin-bottom: 2px;
+		}
+	}
+	p {
+		font-size: 14px;
+		@include res(s) {
+			font-size: 12px;
+		}
+	}
+}
+
+.consist__item-img {
+	display: flex;
+	align-items: flex-end;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin-bottom: 10px;
+	img {
+		display: block;
+		flex-shrink: 0;
+	}
+}

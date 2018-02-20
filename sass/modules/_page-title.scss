@@ -11,6 +11,11 @@
 	@include res(s) {
 		margin-bottom: $pad-xs;
 	}
+	.h1, .h2, .h3 {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	&--mini {
 		margin: 0 auto $pad-s;
 		@include res(l) {

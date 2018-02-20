@@ -314,6 +314,33 @@ $('#video-slider').slick({
 	nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
 	prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>'
 });
+
+$('#our-clients-slider').slick({
+	adaptiveHeight: true,
+	slidesToShow: 5,
+	slidesToScroll: 5,
+	//autoplay: true,
+	infinite: false,
+	arrows: true,
+	nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
+	prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>',
+	responsive: [
+		{
+			breakpoint: 680,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		}
+	]
+});
 /***********************
 Slick END
 ***********************/

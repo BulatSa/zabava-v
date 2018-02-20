@@ -1,0 +1,39 @@
+.our-clients-sec {}
+
+.our-clients {}
+
+.our-clients__list {
+	padding-left: 52px;
+	padding-right: 52px;
+	@include res(s) {
+		padding-left: 38px;
+		padding-right: 38px;
+	}
+	.slick-track {
+		display: flex;
+		align-items: center;
+	}
+	.slider-next {
+		right: 0;
+	}
+	.slider-prev {
+		left: 0;
+	}
+}
+
+.our-clients__item {
+	width: 20%;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	@include res(s) {
+		width: 33.33333%;
+	}
+	@include res(xs) {
+		width: 50%;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}

@@ -38,10 +38,12 @@ $cross-bg-color--hover: #fffb42;
 	@include res(s){
 		top: 5px;
 		right: 5px;
+		width: 32px;
+		height: 32px;
 	}
 
 	&:hover{
-		background-color: $cross-bg-color--hover;
+		background-color: $pink;
 	}
 
 	&:before,&:after{
