@@ -341,6 +341,23 @@ $('#our-clients-slider').slick({
 		}
 	]
 });
+
+$('.rooms-slider__list').each(function () {
+	$(this).slick({
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: '0',
+		//autoplay: true,
+		infinite: false,
+		arrows: true,
+		dots: true,
+		dotsClass: 'slider-dots',
+		nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
+		prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>'
+	});
+});
 /***********************
 Slick END
 ***********************/
@@ -365,6 +382,28 @@ $(document).ready(function() {
 });
 /***********************
 Our Offers Tabs END
+***********************/
+
+
+/***********************
+ Rooms Slider Tabs BEGIN
+***********************/
+$(document).ready(function() {
+	if($('.rooms-slider__nav').length) {
+		$('.rooms-slider__nav a').on('click', function(e){
+			e.preventDefault();
+			var thisLink = $(this).data('room');
+
+			$('.rooms-slider__nav a').not($(this)).removeClass('active');
+			$(this).addClass('active');
+
+			$('.rooms-slider__list-wrap .rooms-slider__list').removeClass('active');
+			$('.rooms-slider__list-wrap').find('#'+thisLink).addClass('active');
+		})
+	}
+});
+/***********************
+ Rooms Slider Tabs END
 ***********************/
 
 

@@ -1,0 +1,66 @@
+.rooms-benefits-sec {
+	background: url("../img/rooms-benefits/bg-rooms-benefits.jpg") no-repeat center top,$gray;
+	@include res(s) {
+		background: $gray;
+	}
+}
+
+.rooms-benefits {
+	.page-title {
+		max-width: 720px;
+	}
+}
+
+.rooms-benefits__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	@include res(s) {
+		margin-left: -$gutter-mobile;
+		margin-right: -$gutter-mobile;
+	}
+}
+
+.rooms-benefits__item {
+	width: 20%;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	text-align: center;
+	@include res(xl) {
+		width: 33.33333%;
+		margin-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
+	}
+	@include res(xs) {
+		width: 50%;
+		margin-bottom: $pad-xs;
+	}
+}
+
+.rooms-benefits__item-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	padding-bottom: $pad-xxs;
+	@include res(l) {
+		height: 75px;
+	}
+	@include res(s) {
+		height: 68px;
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		flex-shrink: 0;
+	}
+}

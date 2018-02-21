@@ -26,4 +26,9 @@
 		}
 	}
 }
-.page-title__descr {}
+.page-title__descr {
+	font-size: 16px;
+	@include res(l) {
+		font-size: 14px;
+	}
+}

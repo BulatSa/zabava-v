@@ -1,0 +1,18 @@
+.form-bottom-sec {
+	color: #fff;
+	background-color: $dark-blue;
+	background-position: center center;
+	background-size: cover;
+}
+.form-bottom {
+
+}
+.form-bottom__input {
+	max-width: 700px;
+	margin: 0 auto;
+	.ajax-form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}

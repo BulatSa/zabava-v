@@ -83,6 +83,24 @@
 			background: $pink;
 		}
 	}
+	&--nav {
+		text-shadow: none;
+		border: 2px solid $pink;
+		box-shadow: none;
+		background: transparent;
+		&:hover {
+			border-color: $text-color;
+			color: $text-color;
+			box-shadow: none;
+			background: transparent;
+		}
+		&.active {
+			background: $pink;
+			&:hover {
+				border-color: $pink;
+			}
+		}
+	}
 }
 
 button::-moz-focus-inner {

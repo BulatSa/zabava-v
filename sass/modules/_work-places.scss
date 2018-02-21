@@ -67,7 +67,7 @@
 	padding-left: $pad-s;
 	padding-bottom: $pad-s;
 	border-radius: 20px;
-	box-shadow: 0 0 15px 0 transparentize($dark-blue,1);
+	box-shadow: 0 0 15px 0 transparentize($blue,1);
 	background-position: center center;
 	background-size: cover;
 	transition: all 0.3s ease;
@@ -94,7 +94,7 @@
 		padding-right: $pad-xxs;
 	}
 	&:hover {
-		box-shadow: 0 0 15px 0 transparentize($dark-blue,0.5);
+		box-shadow: 0 0 15px 0 transparentize($blue,0.5);
 	}
 }
 
