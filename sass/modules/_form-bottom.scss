@@ -1,8 +1,11 @@
 .form-bottom-sec {
 	color: #fff;
 	background-color: $dark-blue;
-	background-position: center center;
+	background-position: top center;
 	background-size: cover;
+	@include res(l) {
+		background: linear-gradient(to bottom, #05416b 2%,#0074b9 50%,#05416b 100%)!important;
+	}
 }
 .form-bottom {
 
@@ -14,5 +17,49 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+	}
+}
+
+.form-bottom__rooms {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 25px;
+	padding-top: 5px;
+	@include res(l) {
+		margin-bottom: 20px;
+	}
+	@include res(s) {
+		overflow: auto;
+	}
+	@include res(xs) {
+		margin-bottom: 12px;
+	}
+	input {
+		display: none;
+		&:checked {
+			& + .btn {
+				background: $pink;
+				color: $text-color;
+				&:hover {
+					border-color: $pink;
+				}
+			}
+		}
+	}
+	.btn {
+		display: block;
+		margin-left: $gutter;
+		margin-right: $gutter;
+		color: #fff;
+		@include res(l) {
+			margin-left: $gutter-mobile;
+			margin-right: $gutter-mobile;
+		}
+		@include res(s) {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
 	}
 }

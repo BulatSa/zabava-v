@@ -114,11 +114,25 @@
 
 <section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-rooms.jpg')">
 	<div class="form-bottom container">
-		<div class="page-title">
+		<div class="page-title page-title--mini">
 			<p class="h2">Забронируйте пространство <span class="h3">прямо сейчас</span></p>
 		</div>
 		<div class="form-bottom__input">
 			<form class="ajax-form">
+				<div class="form-bottom__rooms">
+					<label>
+						<input type="radio" name="room" checked>
+						<span class="btn btn--mini btn--nav">Приключения</span>
+					</label>
+					<label>
+						<input type="radio" name="room">
+						<span class="btn btn--mini btn--nav">Loft</span>
+					</label>
+					<label>
+						<input type="radio" name="room">
+						<span class="btn btn--mini btn--nav">Мед</span>
+					</label>
+				</div>
 				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
 				<textarea class="input-textarea" name="comment" placeholder="комментарий"></textarea>

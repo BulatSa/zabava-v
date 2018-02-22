@@ -5022,8 +5022,14 @@ button::-moz-focus-inner {
         margin-right: 10px; } }
     @media (max-width: 680px) {
       .rooms-slider__nav a {
-        margin-left: 5px;
-        margin-right: 5px; } }
+        margin-left: 4px;
+        margin-right: 4px; } }
+    @media (max-width: 680px) {
+      .rooms-slider__nav a:first-child {
+        margin-left: 0; } }
+    @media (max-width: 680px) {
+      .rooms-slider__nav a:last-child {
+        margin-right: 0; } }
 
 .rooms-slider__list-wrap {
   position: relative; }
@@ -5066,8 +5072,14 @@ button::-moz-focus-inner {
 .form-bottom-sec {
   color: #fff;
   background-color: #05416b;
-  background-position: center center;
+  background-position: top center;
   background-size: cover; }
+  @media (max-width: 1024px) {
+    .form-bottom-sec {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #05416b), color-stop(50%, #0074b9), to(#05416b)) !important;
+      background: -webkit-linear-gradient(top, #05416b 2%, #0074b9 50%, #05416b 100%) !important;
+      background: -o-linear-gradient(top, #05416b 2%, #0074b9 50%, #05416b 100%) !important;
+      background: linear-gradient(to bottom, #05416b 2%, #0074b9 50%, #05416b 100%) !important; } }
 
 .form-bottom__input {
   max-width: 700px;
@@ -5081,6 +5093,49 @@ button::-moz-focus-inner {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+
+.form-bottom__rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-top: 5px; }
+  @media (max-width: 1024px) {
+    .form-bottom__rooms {
+      margin-bottom: 20px; } }
+  @media (max-width: 680px) {
+    .form-bottom__rooms {
+      overflow: auto; } }
+  @media (max-width: 480px) {
+    .form-bottom__rooms {
+      margin-bottom: 12px; } }
+  .form-bottom__rooms input {
+    display: none; }
+    .form-bottom__rooms input:checked + .btn {
+      background: #f3afd0;
+      color: #2a2c3d; }
+      .form-bottom__rooms input:checked + .btn:hover {
+        border-color: #f3afd0; }
+  .form-bottom__rooms .btn {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #fff; }
+    @media (max-width: 1024px) {
+      .form-bottom__rooms .btn {
+        margin-left: 10px;
+        margin-right: 10px; } }
+    @media (max-width: 680px) {
+      .form-bottom__rooms .btn {
+        margin-left: 4px;
+        margin-right: 4px; } }
 
 .scroll {
   height: 1000px; }

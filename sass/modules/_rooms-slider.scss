@@ -31,8 +31,18 @@
 			margin-right: $gutter-mobile;
 		}
 		@include res(s) {
-			margin-left: 5px;
-			margin-right: 5px;
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+		&:first-child {
+			@include res(s) {
+				margin-left: 0;
+			}
+		}
+		&:last-child {
+			@include res(s) {
+				margin-right: 0;
+			}
 		}
 	}
 }
