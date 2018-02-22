@@ -17,6 +17,7 @@
 					<li><a href="main.php">Главная</a></li>
 					<li><a href="about-us.php">О нас</a></li>
 					<li><a href="rooms.php">Пространства</a></li>
+					<li><a href="service.php">Услуги</a></li>
 				</ul>
 			</div>
 		</div>

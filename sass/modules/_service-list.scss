@@ -1,0 +1,24 @@
+.service-list-sec {
+	background: url("../img/service-list/bg-service-list.jpg") no-repeat center top,#fff;
+	@include res(s) {
+		background: #fff;
+	}
+}
+
+.service-list {
+	.page-title {
+		max-width: 640px;
+		padding-top: $pad-xs;
+		@include res(s) {
+			padding-top: 0;
+		}
+	}
+}
+
+.service-list__items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+}

@@ -1773,6 +1773,26 @@ body {
       padding-top: 30px;
       padding-bottom: 30px; } }
 
+.def-sec-big {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  @media (max-width: 1480px) {
+    .def-sec-big {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  @media (max-width: 1024px) {
+    .def-sec-big {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  @media (max-width: 680px) {
+    .def-sec-big {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media (max-width: 480px) {
+    .def-sec-big {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+
 .def-sec-top {
   padding-top: 100px; }
   @media (max-width: 1480px) {
@@ -2705,6 +2725,13 @@ button::-moz-focus-inner {
   @media (max-width: 680px) {
     .page-title {
       margin-bottom: 20px; } }
+  .page-title p {
+    margin-bottom: 15px; }
+    @media (max-width: 1024px) {
+      .page-title p {
+        margin-bottom: 10px; } }
+    .page-title p:last-child {
+      margin-bottom: 0; }
   .page-title .h1:last-child, .page-title .h2:last-child, .page-title .h3:last-child {
     margin-bottom: 0; }
   .page-title--mini {
@@ -2759,6 +2786,10 @@ button::-moz-focus-inner {
       padding-bottom: 5px;
       background: #fff;
       z-index: 11; } }
+  .top-panel__mobile a {
+    display: block; }
+  .top-panel__mobile img {
+    display: block; }
 
 .top-panel__menu {
   max-width: 960px;
@@ -3582,6 +3613,7 @@ button::-moz-focus-inner {
       padding-left: 50px; } }
   @media (max-width: 768px) {
     .big-slide__info {
+      max-width: 620px;
       margin: 20px auto 30px;
       padding-left: 0;
       padding-bottom: 5px; } }
@@ -3595,6 +3627,9 @@ button::-moz-focus-inner {
   @media (max-width: 1480px) {
     .big-slide__descr {
       margin-bottom: 30px; } }
+  @media (max-width: 1024px) {
+    .big-slide__descr {
+      max-width: 480px; } }
   @media (max-width: 680px) {
     .big-slide__descr {
       margin-bottom: 20px; } }
@@ -4116,6 +4151,8 @@ button::-moz-focus-inner {
     transform: scale(1.1) rotate(0) translate3d(0, 0, 0); }
   .addition:hover .addition__descr {
     opacity: 1; }
+  .addition:hover .addition__more {
+    opacity: 1; }
   .addition.animated {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -4184,6 +4221,27 @@ button::-moz-focus-inner {
   @media (max-width: 1024px) {
     .addition__descr {
       display: none; } }
+
+.addition__more {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: #72e1f4;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  @media (max-width: 1024px) {
+    .addition__more {
+      position: relative;
+      bottom: initial;
+      font-size: 12px;
+      opacity: 1; } }
 
 .video-slider-sec {
   min-height: 1110px;
@@ -5136,6 +5194,119 @@ button::-moz-focus-inner {
       .form-bottom__rooms .btn {
         margin-left: 4px;
         margin-right: 4px; } }
+
+.service-list-sec {
+  background: url("../img/service-list/bg-service-list.jpg") no-repeat center top, #fff; }
+  @media (max-width: 680px) {
+    .service-list-sec {
+      background: #fff; } }
+
+.service-list .page-title {
+  max-width: 640px;
+  padding-top: 20px; }
+  @media (max-width: 680px) {
+    .service-list .page-title {
+      padding-top: 0; } }
+
+.service-list__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden; }
+
+.service-benefits-sec {
+  background: url("../img/service-benefits/bg-service-benefits.jpg") no-repeat center center;
+  background-size: cover; }
+  @media (max-width: 680px) {
+    .service-benefits-sec {
+      background: -webkit-radial-gradient(center, ellipse, #fbe5e5 0%, #f1b7bf 100%);
+      background: -o-radial-gradient(center, ellipse, #fbe5e5 0%, #f1b7bf 100%);
+      background: radial-gradient(ellipse at center, #fbe5e5 0%, #f1b7bf 100%); } }
+
+.service-benefits {
+  padding-top: 30px; }
+  @media (max-width: 1024px) {
+    .service-benefits {
+      padding-top: 20px; } }
+  @media (max-width: 680px) {
+    .service-benefits {
+      padding-top: 0; } }
+  .service-benefits .page-title {
+    max-width: 720px; }
+
+.service-benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 60px; }
+  @media (max-width: 768px) {
+    .service-benefits__list {
+      padding-bottom: 30px; } }
+  @media (max-width: 680px) {
+    .service-benefits__list {
+      padding-bottom: 20px; } }
+
+.service-benefits__item {
+  width: 25%;
+  max-width: 300px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .service-benefits__item {
+      width: 50%;
+      padding-bottom: 20px; } }
+  @media (max-width: 375px) {
+    .service-benefits__item {
+      width: 100%; } }
+
+.service-benefits__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 90px;
+  margin-bottom: 10px; }
+  @media (max-width: 768px) {
+    .service-benefits__item-img {
+      height: 70px; } }
+  @media (max-width: 680px) {
+    .service-benefits__item-img {
+      height: 60px; } }
+  @media (max-width: 480px) {
+    .service-benefits__item-img {
+      height: 50px; } }
+  .service-benefits__item-img img {
+    max-height: 100%; }
+
+.service-benefits__item-info span {
+  margin-bottom: 5px; }
+
+.service-benefits__item-info p {
+  font-size: 14px; }
+  @media (max-width: 680px) {
+    .service-benefits__item-info p {
+      font-size: 12px; } }
 
 .scroll {
   height: 1000px; }

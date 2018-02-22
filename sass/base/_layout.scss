@@ -60,6 +60,27 @@ body {
 	}
 }
 
+.def-sec-big {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	@include res(xl) {
+		padding-top: $pad-xxl;
+		padding-bottom: $pad-xxl;
+	}
+	@include res(l) {
+		padding-top: $pad-l;
+		padding-bottom: $pad-l;
+	}
+	@include res(s) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include res(xs) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+}
+
 .def-sec-top {
 	padding-top: $pad-xxl;
 	@include res(xl) {

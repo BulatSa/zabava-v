@@ -11,6 +11,15 @@
 	@include res(s) {
 		margin-bottom: $pad-xs;
 	}
+	p {
+		margin-bottom: 15px;
+		@include res(l) {
+			margin-bottom: 10px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	.h1, .h2, .h3 {
 		&:last-child {
 			margin-bottom: 0;

@@ -87,6 +87,7 @@
 		padding-left: 50px;
 	}
 	@include res(m) {
+		max-width: 620px;
 		margin: $pad-xs auto $pad-s;
 		padding-left: 0;
 		padding-bottom: 5px;
@@ -103,6 +104,9 @@
 	margin: 0 auto $pad-m;
 	@include res(xl) {
 		margin-bottom: $pad-s;
+	}
+	@include res(l) {
+		max-width: 480px;
 	}
 	@include res(s) {
 		margin-bottom: $pad-xs;

@@ -5,7 +5,7 @@
 		<div class="big-slide" style="background-image: url('../img/big-slider/rooms.jpg')">
 			<div class="container">
 				<div class="big-slide__img">
-					<img src="img/big-slider/about-us.jpg" alt="">
+					<img src="img/big-slider/rooms.jpg" alt="">
 				</div>
 				<div class="big-slide__info">
 					<p class="h1"> Еще больше пространства для творчества</p>

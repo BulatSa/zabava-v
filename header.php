@@ -184,7 +184,7 @@
 <section class="top-panel-sec">
 	<div class="top-panel container">
 		<div class="top-panel__mobile">
-			<img src="img/logo-mobile.svg" alt="">
+			<a href="/"><img src="img/logo-mobile.svg" alt=""></a>
 			<a href="tel:88462671769">8 (846) 267·17·69</a>
 		</div>
 		<nav class="top-panel__menu">

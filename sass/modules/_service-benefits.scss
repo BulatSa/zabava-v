@@ -1,0 +1,81 @@
+.service-benefits-sec {
+	background: url("../img/service-benefits/bg-service-benefits.jpg") no-repeat center center;
+	background-size: cover;
+	@include res(s) {
+		background: radial-gradient(ellipse at center, #fbe5e5 0%,#f1b7bf 100%);
+	}
+}
+
+.service-benefits {
+	padding-top: $pad-s;
+	@include res(l) {
+		padding-top: $pad-xs;
+	}
+	@include res(s) {
+		padding-top: 0;
+	}
+	.page-title {
+		max-width: 720px;
+	}
+}
+
+.service-benefits__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: $pad-l;
+	@include res(m) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+}
+
+.service-benefits__item {
+	width: 25%;
+	max-width: 300px;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	text-align: center;
+	@include res(m) {
+		width: 50%;
+		padding-bottom: $pad-xs;
+	}
+	@include res(xxs) {
+		width: 100%;
+	}
+}
+
+.service-benefits__item-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+	margin-bottom: 10px;
+	@include res(m) {
+		height: 70px;
+	}
+	@include res(s) {
+		height: 60px;
+	}
+	@include res(xs) {
+		height: 50px;
+	}
+	img {
+		max-height: 100%;
+	}
+}
+
+.service-benefits__item-info {
+	span {
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 14px;
+		@include res(s) {
+			font-size: 12px;
+		}
+	}
+}
