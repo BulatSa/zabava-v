@@ -204,3 +204,11 @@
 		</div>
 	</div>
 </section>
+
+<div class="breadcrumbs">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="#">Внутренняя страница</a></li>
+		<li><a href="#">Внутрянка</a></li>
+	</ul>
+</div>

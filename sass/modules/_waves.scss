@@ -42,8 +42,11 @@
 			height: 60px;
 		}
 		@include res(s) {
-			bottom: -27px;
+			bottom: -24px;
 			height: 32px;
+		}
+		@include res(xs) {
+			bottom: -27px;
 		}
 	}
 }
@@ -92,8 +95,11 @@
 			height: 60px;
 		}
 		@include res(s) {
-			bottom: -27px;
+			bottom: -24px;
 			height: 32px;
+		}
+		@include res(xs) {
+			bottom: -27px;
 		}
 	}
 }
@@ -142,8 +148,11 @@
 			height: 60px;
 		}
 		@include res(s) {
-			bottom: -27px;
+			bottom: -24px;
 			height: 32px;
+		}
+		@include res(xs) {
+			bottom: -27px;
 		}
 	}
 }

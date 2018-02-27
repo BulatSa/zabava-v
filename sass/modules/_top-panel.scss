@@ -23,7 +23,7 @@
 		padding-right: $gutter-mobile;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		background: #fff;
+		background: transparentize(#eeeeee, 0.05);
 		z-index: 11;
 	}
 	a {

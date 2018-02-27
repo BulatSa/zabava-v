@@ -55,7 +55,10 @@
 		}
 		@include res(l) {
 			padding: 10px 16px;
-
+		}
+		@include res(s) {
+			padding: 7px 12px;
+			font-size: 13px;
 		}
 	}
 	&--white {

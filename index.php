@@ -18,6 +18,8 @@
 					<li><a href="about-us.php">О нас</a></li>
 					<li><a href="rooms.php">Пространства</a></li>
 					<li><a href="service.php">Услуги</a></li>
+					<li><a href="animators.php">Аниматоры</a></li>
+					<li><a href="programms.php">Шоу-программы</a></li>
 				</ul>
 			</div>
 		</div>

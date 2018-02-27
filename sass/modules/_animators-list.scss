@@ -1,0 +1,46 @@
+.animators-list-sec {
+	background: #fff;
+}
+
+.animators-list {
+	.page-title {
+		margin-bottom: $pad-s;
+	}
+}
+
+.animators-list__items-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: $pad-l;
+	@include res(s) {
+		padding-bottom: $pad-s;
+	}
+	.btn {
+		display: block;
+		margin-left: $gutter;
+		margin-right: $gutter;
+		@include res(l) {
+			margin-left: $gutter-mobile;
+			margin-right: $gutter-mobile;
+		}
+		@include res(s) {
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: $pad-xxs;
+		}
+		&:first-child {
+			@include res(s) {
+				margin-left: 0;
+			}
+		}
+		&:last-child {
+			@include res(s) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.animators-list__items {}
