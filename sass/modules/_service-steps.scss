@@ -1,0 +1,82 @@
+.service-steps-sec {
+	background: #fff;
+}
+
+.service-steps {
+	padding-top: 160px;
+	@include res(xl) {
+		padding-top: 90px;
+	}
+	@include res(l) {
+		padding-top: 0;
+	}
+}
+
+.service-steps__item {
+	padding-bottom: $pad-xxl;
+	text-align: center;
+	@include res(xl) {
+		padding-bottom: $pad-xl;
+	}
+	@include res(s) {
+		padding-bottom: $pad-m;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+.service-steps__item-num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	font-family: $font-head;
+	span {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.service-steps__item-img {
+	margin-bottom: 20px;
+	&--1 {
+		margin-top: -40px;
+		@include res(s) {
+			margin-top: 0;
+		}
+	}
+	&--3 {
+		margin-bottom: -20px;
+		@include res(l) {
+			margin-top: 10px;
+			margin-bottom: -10px;
+		}
+		@include res(s) {
+			margin-bottom: 20px;
+		}
+	}
+	&--4 {
+		@include res(l) {
+			margin-top: 20px;
+		}
+	}
+	&--6 {
+		margin-bottom: -30px;
+		@include res(l) {
+			margin-bottom: -20px;
+		}
+		@include res(s) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.service-steps__item-text {
+	max-width: 660px;
+	margin: 0 auto;
+}

@@ -79,3 +79,19 @@
 		}
 	}
 }
+
+.service-benefits__cup {
+	position: absolute;
+	left: 50%;
+	bottom: -210px;
+	transform: translate3d(-50%,0,0);
+	z-index: 2;
+	pointer-events: none;
+	@include res(xl) {
+		bottom: -160px;
+		transform: translate3d(-50%,0,0) scale(0.6);
+	}
+	@include res(l) {
+		display: none;
+	}
+}

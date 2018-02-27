@@ -163,33 +163,96 @@
 			<a href="#bottom-form" class="btn">Заказать услугу</a>
 		</div>
 	</div>
+	<img class="service-benefits__cup" src="img/service-benefits/cup.png" alt="">
 </section>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-rooms.jpg')">
+<div class="service-steps-sec def-sec wave-white-top">
+	<div class="service-steps container">
+		<div class="page-title">
+			<p class="h2">Как создается праздник?</p>
+		</div>
+		<div class="service-steps__item">
+			<div class="service-steps__item-num video-play h2"><span>01</span></div>
+			<div class="service-steps__item-img service-steps__item-img--1">
+				<img src="img/service-steps/step-1.jpg" alt="">
+			</div>
+			<div class="service-steps__item-text">
+				<p class="h3">свяжитесь с нами!</p>
+				<span>Позвоните или оставьте заявку на сайте.</span>
+			</div>
+		</div>
+
+		<div class="service-steps__item">
+			<div class="service-steps__item-num video-play h2"><span>02</span></div>
+			<div class="service-steps__item-img service-steps__item-img--2">
+				<img src="img/service-steps/step-2.jpg" alt="">
+			</div>
+			<div class="service-steps__item-text">
+				<p class="h3">Расскажите о своих пожеланиях,</p>
+				<span>чтобы менеджер подобрал подходящие вам программы</span>
+			</div>
+		</div>
+
+		<div class="service-steps__item">
+			<div class="service-steps__item-num video-play h2"><span>03</span></div>
+			<div class="service-steps__item-img service-steps__item-img--3">
+				<img src="img/service-steps/step-3.jpg" alt="">
+			</div>
+			<div class="service-steps__item-text">
+				<p class="h3">Подтвердите программу</p>
+				<span>и мы начнем продумывать сюжет, репетировать сценарий и подбирать необходимый реквизит</span>
+			</div>
+		</div>
+
+		<div class="service-steps__item">
+			<div class="service-steps__item-num video-play h2"><span>04</span></div>
+			<div class="service-steps__item-img service-steps__item-img--4">
+				<img src="img/service-steps/step-4.jpg" alt="">
+			</div>
+			<div class="service-steps__item-text">
+				<p class="h3">Не беспокойтесь, наш менеджер свяжется с Вами</p>
+				<span>еще раз за день до мероприятия, чтобы подтвердить все детали</span>
+			</div>
+		</div>
+
+		<div class="service-steps__item">
+			<div class="service-steps__item-num video-play h2"><span>05</span></div>
+			<div class="service-steps__item-img service-steps__item-img--5">
+				<img src="img/service-steps/step-5.jpg" alt="">
+			</div>
+			<div class="service-steps__item-text">
+				<p class="h3">В день праздника
+					мы приедем заранее,</p>
+				<span>чтобы украсить помещение и переодеться в костюмы</span>
+			</div>
+		</div>
+
+		<div class="service-steps__item">
+			<div class="service-steps__item-num video-play h2"><span>06</span></div>
+			<div class="service-steps__item-img service-steps__item-img--6">
+				<img src="img/service-steps/step-6.jpg" alt="">
+			</div>
+			<div class="service-steps__item-text">
+				<p class="h3">Все, готово!</p>
+				<span>Можем начинать веселье!</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-service.jpg')">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
-			<p class="h2">Забронируйте пространство <span class="h3">прямо сейчас</span></p>
+			<p class="h2">Помочь<span class="h3">с организацией праздника</span></p>
 		</div>
 		<div class="form-bottom__input">
 			<form class="ajax-form">
-				<div class="form-bottom__rooms">
-					<label>
-						<input type="radio" name="room" checked>
-						<span class="btn btn--mini btn--nav">Приключения</span>
-					</label>
-					<label>
-						<input type="radio" name="room">
-						<span class="btn btn--mini btn--nav">Loft</span>
-					</label>
-					<label>
-						<input type="radio" name="room">
-						<span class="btn btn--mini btn--nav">Мед</span>
-					</label>
-				</div>
 				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
-				<textarea class="input-textarea" name="comment" placeholder="комментарий"></textarea>
+				<input type="text" class="input-text" placeholder="E-mail" name="phone">
+				<textarea class="input-textarea" name="comment" placeholder="Дополнения"></textarea>
 				<div class="form-submit">
 					<label class="style-checkbox">
 						<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">

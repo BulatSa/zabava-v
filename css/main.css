@@ -5308,6 +5308,98 @@ button::-moz-focus-inner {
     .service-benefits__item-info p {
       font-size: 12px; } }
 
+.service-benefits__cup {
+  position: absolute;
+  left: 50%;
+  bottom: -210px;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  z-index: 2;
+  pointer-events: none; }
+  @media (max-width: 1480px) {
+    .service-benefits__cup {
+      bottom: -160px;
+      -webkit-transform: translate3d(-50%, 0, 0) scale(0.6);
+      transform: translate3d(-50%, 0, 0) scale(0.6); } }
+  @media (max-width: 1024px) {
+    .service-benefits__cup {
+      display: none; } }
+
+.service-steps-sec {
+  background: #fff; }
+
+.service-steps {
+  padding-top: 160px; }
+  @media (max-width: 1480px) {
+    .service-steps {
+      padding-top: 90px; } }
+  @media (max-width: 1024px) {
+    .service-steps {
+      padding-top: 0; } }
+
+.service-steps__item {
+  padding-bottom: 100px;
+  text-align: center; }
+  @media (max-width: 1480px) {
+    .service-steps__item {
+      padding-bottom: 80px; } }
+  @media (max-width: 680px) {
+    .service-steps__item {
+      padding-bottom: 40px; } }
+  .service-steps__item:last-child {
+    padding-bottom: 0; }
+  .service-steps__item img {
+    display: block;
+    max-width: 100%; }
+
+.service-steps__item-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Affect", "Helvetica Neue", Arial, sans-serif; }
+  .service-steps__item-num span {
+    position: relative;
+    z-index: 2; }
+
+.service-steps__item-img {
+  margin-bottom: 20px; }
+  .service-steps__item-img--1 {
+    margin-top: -40px; }
+    @media (max-width: 680px) {
+      .service-steps__item-img--1 {
+        margin-top: 0; } }
+  .service-steps__item-img--3 {
+    margin-bottom: -20px; }
+    @media (max-width: 1024px) {
+      .service-steps__item-img--3 {
+        margin-top: 10px;
+        margin-bottom: -10px; } }
+    @media (max-width: 680px) {
+      .service-steps__item-img--3 {
+        margin-bottom: 20px; } }
+  @media (max-width: 1024px) {
+    .service-steps__item-img--4 {
+      margin-top: 20px; } }
+  .service-steps__item-img--6 {
+    margin-bottom: -30px; }
+    @media (max-width: 1024px) {
+      .service-steps__item-img--6 {
+        margin-bottom: -20px; } }
+    @media (max-width: 680px) {
+      .service-steps__item-img--6 {
+        margin-bottom: 20px; } }
+
+.service-steps__item-text {
+  max-width: 660px;
+  margin: 0 auto; }
+
 .scroll {
   height: 1000px; }
 
