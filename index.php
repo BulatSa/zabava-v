@@ -20,6 +20,7 @@
 					<li><a href="service.php">Услуги</a></li>
 					<li><a href="animators.php">Аниматоры</a></li>
 					<li><a href="programms.php">Шоу-программы</a></li>
+					<li><a href="calendar.php">Календарные праздники</a></li>
 				</ul>
 			</div>
 		</div>

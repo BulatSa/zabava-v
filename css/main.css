@@ -4364,8 +4364,8 @@ button::-moz-focus-inner {
       padding-bottom: 10px; } }
   .addition:hover .addition__img:before, .addition:hover .addition__img:after {
     opacity: 1;
-    -webkit-transform: scale(1.1) rotate(0) translate3d(0, 0, 0);
-    transform: scale(1.1) rotate(0) translate3d(0, 0, 0); }
+    -webkit-transform: scale(1.07) rotate(0) translate3d(0, 0, 0);
+    transform: scale(1.07) rotate(0) translate3d(0, 0, 0); }
   .addition:hover .addition__descr {
     opacity: 1; }
   .addition:hover .addition__more {
@@ -4419,6 +4419,7 @@ button::-moz-focus-inner {
   .addition__img img {
     display: block;
     max-width: 100%;
+    margin: 0 auto;
     border-radius: 20px; }
 
 .addition__descr {
@@ -5357,6 +5358,9 @@ button::-moz-focus-inner {
       background: -webkit-linear-gradient(top, #05416b 2%, #0074b9 50%, #05416b 100%) !important;
       background: -o-linear-gradient(top, #05416b 2%, #0074b9 50%, #05416b 100%) !important;
       background: linear-gradient(to bottom, #05416b 2%, #0074b9 50%, #05416b 100%) !important; } }
+
+.form-bottom .page-title {
+  max-width: 840px; }
 
 .form-bottom__input {
   max-width: 700px;
