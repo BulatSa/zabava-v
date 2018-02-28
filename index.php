@@ -21,6 +21,7 @@
 					<li><a href="animators.php">Аниматоры</a></li>
 					<li><a href="programms.php">Шоу-программы</a></li>
 					<li><a href="calendar.php">Календарные праздники</a></li>
+					<li><a href="additions.php">Добавки</a></li>
 				</ul>
 			</div>
 		</div>

@@ -387,7 +387,7 @@
 			<div class="additions__item addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/addictions/addiction-1.jpg" alt="">
+						<img src="img/additions/addition-1.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
 					<span class="h5">Шоколадный Шоколадный фонтан</span>
@@ -396,7 +396,7 @@
 			<div class="additions__item addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/addictions/addiction-1.jpg" alt="">
+						<img src="img/additions/addition-2.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
 					<span class="h5">Шоколадный фонтан</span>
@@ -405,7 +405,7 @@
 			<div class="additions__item addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/addictions/addiction-1.jpg" alt="">
+						<img src="img/additions/addition-3.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
 					<span class="h5">Шоколадный фонтан</span>
@@ -414,7 +414,7 @@
 			<div class="additions__item addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/addictions/addiction-1.jpg" alt="">
+						<img src="img/additions/addition-4.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
 					<span class="h5">Шоколадный фонтан</span>

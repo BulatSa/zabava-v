@@ -4,88 +4,47 @@
 <section class="animators-list-sec def-sec-waved-bottom wave-white-bottom">
 	<div class="animators-list container">
 		<div class="page-title">
-			<p class="h2">Шоу-программы для всех возрастов</p>
-			<p class="page-title__descr">Мы поможем создать настроение праздника и волшебства даже в самый обычный день.</p>
+			<p class="h2">Добавки</p>
+			<p class="page-title__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
 		</div>
 		<div class="additions-list">
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-1.jpg" alt="">
+						<img src="img/additions/addition-1.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">фокусы–покусы</span>
+					<span class="h5">Аквагрим</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-2.jpg" alt="">
+						<img src="img/additions/addition-2.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Шоу «Оживший динозавр»</span>
+					<span class="h5">Шоколадный фонтан</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-3.jpg" alt="">
+						<img src="img/additions/addition-3.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Шоу «Футбольный Фристайл»</span>
+					<span class="h5">выпускной в детских садах</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-4.jpg" alt="">
+						<img src="img/additions/addition-4.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Шоу мыльных пузырей</span>
-					<span class="addition__more">Подробнее</span>
-				</a>
-			</div>
-
-			<div class="addition anim">
-				<a href="#">
-					<span class="addition__img">
-						<img src="img/programms/programm-5.jpg" alt="">
-						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
-					</span>
-					<span class="h5">Шоу дрессированных собачек</span>
-					<span class="addition__more">Подробнее</span>
-				</a>
-			</div>
-			<div class="addition anim">
-				<a href="#">
-					<span class="addition__img">
-						<img src="img/programms/programm-6.jpg" alt="">
-						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
-					</span>
-					<span class="h5">Шоу Ростовых кукол</span>
-					<span class="addition__more">Подробнее</span>
-				</a>
-			</div>
-			<div class="addition anim">
-				<a href="#">
-					<span class="addition__img">
-						<img src="img/programms/programm-7.jpg" alt="">
-						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
-					</span>
-					<span class="h5">Электрическое Тесла-шоу</span>
-					<span class="addition__more">Подробнее</span>
-				</a>
-			</div>
-			<div class="addition anim">
-				<a href="#">
-					<span class="addition__img">
-						<img src="img/programms/programm-8.jpg" alt="">
-						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
-					</span>
-					<span class="h5">Химическое шоу</span>
+					<span class="h5">выпускной в начальных классах</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
@@ -93,40 +52,81 @@
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-9.jpg" alt="">
+						<img src="img/additions/addition-5.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Световое шоу</span>
+					<span class="h5">дни рождения</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-10.jpg" alt="">
+						<img src="img/additions/addition-6.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Диско-шоу</span>
+					<span class="h5">дни рождения</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-11.jpg" alt="">
+						<img src="img/additions/addition-7.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Бумажное шоу</span>
+					<span class="h5">дни рождения</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
 			<div class="addition anim">
 				<a href="#">
 					<span class="addition__img">
-						<img src="img/programms/programm-12.jpg" alt="">
+						<img src="img/additions/addition-8.jpg" alt="">
 						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
 					</span>
-					<span class="h5">Шоу роботов-трансформеров</span>
+					<span class="h5">дни рождения</span>
+					<span class="addition__more">Подробнее</span>
+				</a>
+			</div>
+
+			<div class="addition anim">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/additions/addition-9.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">дни рождения</span>
+					<span class="addition__more">Подробнее</span>
+				</a>
+			</div>
+			<div class="addition anim">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/additions/addition-10.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">дни рождения</span>
+					<span class="addition__more">Подробнее</span>
+				</a>
+			</div>
+			<div class="addition anim">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/additions/addition-11.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">дни рождения</span>
+					<span class="addition__more">Подробнее</span>
+				</a>
+			</div>
+			<div class="addition anim">
+				<a href="#">
+					<span class="addition__img">
+						<img src="img/additions/addition-12.jpg" alt="">
+						<span class="addition__descr">Приглашая фотографа на Ваш праздник, Вы получите более 150-200 обработанных фотографий, которые оставят неизгладимый след в вашей памяти о столь знаменательном событии.</span>
+					</span>
+					<span class="h5">дни рождения</span>
 					<span class="addition__more">Подробнее</span>
 				</a>
 			</div>
@@ -142,10 +142,10 @@
 </section>
 
 
-<section class="form-bottom-sec def-sec" style="background-image: url('../img/form-bottom/bg-programms.jpg')">
+<section class="form-bottom-sec def-sec" style="background-image: url('../img/form-bottom/bg-additions.jpg')">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
-			<p class="h2">Не можете выбрать?<span class="h3">Мы с радостью вам поможем</span></p>
+			<p class="h2">Не знаете, что выбрать?<span class="h3">оставьте заявку, и&nbsp;наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время </span></p>
 		</div>
 		<div class="form-bottom__input">
 			<form class="ajax-form">

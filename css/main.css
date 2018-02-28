@@ -2606,6 +2606,7 @@ button::-moz-focus-inner {
   height: 67px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 0;
   font-family: "Affect", "Helvetica Neue", Arial, sans-serif;
   color: #72e1f4; }
   @media (max-width: 1024px) {
@@ -2681,10 +2682,19 @@ button::-moz-focus-inner {
     color: #fff; }
     .pagination__item:hover:before, .pagination__item:hover:after {
       opacity: 1; }
+    .pagination__item:hover:before {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(1.2) rotate(15deg);
+      transform: translate3d(-50%, -50%, 0) scale(1.2) rotate(15deg); }
+    .pagination__item:hover:after {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(0.95) rotate(10deg) skew(-20deg, 0deg);
+      transform: translate3d(-50%, -50%, 0) scale(0.95) rotate(10deg) skew(-20deg, 0deg); }
   .pagination__item.active {
     color: #fff; }
     .pagination__item.active:before, .pagination__item.active:after {
       opacity: 1; }
+    .pagination__item.active:hover:before, .pagination__item.active:hover:after {
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0); }
 
 .breadcrumbs {
   position: absolute;
@@ -4309,7 +4319,7 @@ button::-moz-focus-inner {
         margin-top: 90px; } }
 
 .additions-sec {
-  background: url("../img/addictions/bg-addictions.jpg") no-repeat center top, #f6f7fb; }
+  background: url("../img/additions/bg-additions.jpg") no-repeat center top, #f6f7fb; }
   @media (max-width: 680px) {
     .additions-sec {
       background: #f6f7fb; } }

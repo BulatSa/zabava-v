@@ -14,6 +14,7 @@
 	height: 67px;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 0;
 	font-family: $font-head;
 	color: $light-blue;
 	@include res(l) {
@@ -88,11 +89,22 @@
 		&:before, &:after {
 			opacity: 1;
 		}
+		&:before {
+			transform: translate3d(-50%,-50%,0) scale(1.2) rotate(15deg);
+		}
+		&:after {
+			transform: translate3d(-50%,-50%,0) scale(0.95) rotate(10deg) skew(-20deg,0deg);
+		}
 	}
 	&.active {
 		color: #fff;
 		&:before, &:after {
 			opacity: 1;
+		}
+		&:hover {
+			&:before, &:after {
+				transform: translate3d(-50%,-50%,0);
+			}
 		}
 	}
 }
