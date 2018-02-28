@@ -23,6 +23,7 @@
 					<li><a href="calendar.php">Календарные праздники</a></li>
 					<li><a href="additions.php">Добавки</a></li>
 					<li><a href="schools.php">Для школ и классов</a></li>
+					<li><a href="birthday.php">День рождения</a></li>
 				</ul>
 			</div>
 		</div>

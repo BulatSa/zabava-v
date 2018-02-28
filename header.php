@@ -177,7 +177,7 @@
 			<span>Режим работы</span>
 			<p>09:00 – 18:00</p>
 		</div>
-		<a href="#" class="btn btn--mini btn--white">заказать звонок</a>
+		<a href="#" class="btn btn--mini btn--white fancy" data-src="#modal-order">заказать звонок</a>
 	</div>
 </aside>
 

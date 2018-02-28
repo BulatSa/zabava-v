@@ -3,6 +3,12 @@
 	@include res(s) {
 		background: $gray;
 	}
+	&--birthday {
+		background: url("../img/work-places/bg-work-places.jpg") no-repeat center top 10px, #f6f7fb;
+		@include res(m) {
+			background: #f6f7fb;
+		}
+	}
 }
 
 .rooms-benefits {

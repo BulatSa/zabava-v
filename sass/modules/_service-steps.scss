@@ -10,6 +10,9 @@
 	@include res(l) {
 		padding-top: 0;
 	}
+	&--simple {
+		padding-top: 0;
+	}
 }
 
 .service-steps__item {

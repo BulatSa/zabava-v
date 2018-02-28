@@ -1,14 +1,32 @@
 .additions-sec {
 	background: url("../img/additions/bg-additions.jpg") no-repeat center top, #f6f7fb;
+	@include res(xl) {
+		background-position: center top -10px;
+	}
 	@include res(s) {
 		background: #f6f7fb;
+	}
+	&--white {
+		background: url("../img/additions/bg-additions-white.jpg") no-repeat center top, #fff;
+		@include res(s) {
+			background: #fff;
+		}
 	}
 }
 
 .additions {
 	.page-title {
-		max-width: 800px;
+		max-width: 780px;
 		padding-top: $pad-xs;
+		@include res(xl) {
+			padding-top: $pad-l;
+		}
+		@include res(l) {
+			padding-top: $pad-xl;
+		}
+		@include res(s) {
+			padding-top: 0;
+		}
 	}
 }
 

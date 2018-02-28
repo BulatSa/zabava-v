@@ -4,6 +4,13 @@
 	@include res(s) {
 		background: radial-gradient(ellipse at center, #fbe5e5 0%,#f1b7bf 100%);
 	}
+	&--birthday {
+		background: url("../img/service-benefits/bg-service-birthday.jpg") no-repeat center center;
+		background-size: cover;
+		@include res(m) {
+			background: radial-gradient(ellipse at center, #e7fdff 0%,#bceefc 100%);
+		}
+	}
 }
 
 .service-benefits {
@@ -24,7 +31,13 @@
 	align-items: flex-start;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	padding-left: $pad-l;
+	padding-right: $pad-l;
 	padding-bottom: $pad-l;
+	@include res(xl) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	@include res(m) {
 		padding-bottom: $pad-s;
 	}

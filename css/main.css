@@ -3820,7 +3820,7 @@ button::-moz-focus-inner {
       margin-bottom: 20px; } }
 
 .work-places-sec {
-  background: url("../img/work-places/bg-work-places.jpg") no-repeat center top, #f6f7fb;
+  background: url("../img/work-places/bg-work-places.jpg") no-repeat center top 20px, #f6f7fb;
   background-size: 100% auto; }
 
 .work-places .page-title {
@@ -4320,13 +4320,30 @@ button::-moz-focus-inner {
 
 .additions-sec {
   background: url("../img/additions/bg-additions.jpg") no-repeat center top, #f6f7fb; }
+  @media (max-width: 1480px) {
+    .additions-sec {
+      background-position: center top -10px; } }
   @media (max-width: 680px) {
     .additions-sec {
       background: #f6f7fb; } }
+  .additions-sec--white {
+    background: url("../img/additions/bg-additions-white.jpg") no-repeat center top, #fff; }
+    @media (max-width: 680px) {
+      .additions-sec--white {
+        background: #fff; } }
 
 .additions .page-title {
-  max-width: 800px;
+  max-width: 780px;
   padding-top: 20px; }
+  @media (max-width: 1480px) {
+    .additions .page-title {
+      padding-top: 60px; } }
+  @media (max-width: 1024px) {
+    .additions .page-title {
+      padding-top: 80px; } }
+  @media (max-width: 680px) {
+    .additions .page-title {
+      padding-top: 0; } }
 
 .additions__list, .additions-list {
   display: -webkit-box;
@@ -5208,6 +5225,11 @@ button::-moz-focus-inner {
   @media (max-width: 680px) {
     .rooms-benefits-sec {
       background: #f6f7fb; } }
+  .rooms-benefits-sec--birthday {
+    background: url("../img/work-places/bg-work-places.jpg") no-repeat center top 10px, #f6f7fb; }
+    @media (max-width: 768px) {
+      .rooms-benefits-sec--birthday {
+        background: #f6f7fb; } }
 
 .rooms-benefits .page-title {
   max-width: 720px; }
@@ -5467,6 +5489,14 @@ button::-moz-focus-inner {
       background: -webkit-radial-gradient(center, ellipse, #fbe5e5 0%, #f1b7bf 100%);
       background: -o-radial-gradient(center, ellipse, #fbe5e5 0%, #f1b7bf 100%);
       background: radial-gradient(ellipse at center, #fbe5e5 0%, #f1b7bf 100%); } }
+  .service-benefits-sec--birthday {
+    background: url("../img/service-benefits/bg-service-birthday.jpg") no-repeat center center;
+    background-size: cover; }
+    @media (max-width: 768px) {
+      .service-benefits-sec--birthday {
+        background: -webkit-radial-gradient(center, ellipse, #e7fdff 0%, #bceefc 100%);
+        background: -o-radial-gradient(center, ellipse, #e7fdff 0%, #bceefc 100%);
+        background: radial-gradient(ellipse at center, #e7fdff 0%, #bceefc 100%); } }
 
 .service-benefits {
   padding-top: 30px; }
@@ -5490,7 +5520,13 @@ button::-moz-focus-inner {
   justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 60px; }
+  @media (max-width: 1480px) {
+    .service-benefits__list {
+      padding-left: 0;
+      padding-right: 0; } }
   @media (max-width: 768px) {
     .service-benefits__list {
       padding-bottom: 30px; } }
@@ -5573,6 +5609,8 @@ button::-moz-focus-inner {
   @media (max-width: 1024px) {
     .service-steps {
       padding-top: 0; } }
+  .service-steps--simple {
+    padding-top: 0; }
 
 .service-steps__item {
   padding-bottom: 100px;
