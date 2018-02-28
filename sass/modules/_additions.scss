@@ -22,6 +22,9 @@
 		margin-left: -$gutter-mobile;
 		margin-right: -$gutter-mobile;
 	}
+	&--center {
+		justify-content: center;
+	}
 }
 
 .additions__item {

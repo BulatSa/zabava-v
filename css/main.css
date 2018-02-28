@@ -4345,6 +4345,10 @@ button::-moz-focus-inner {
     .additions__list, .additions-list {
       margin-left: -10px;
       margin-right: -10px; } }
+  .additions__list--center, .additions-list--center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .addition {
   display: block;
