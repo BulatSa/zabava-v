@@ -1,6 +1,28 @@
 .big-slider-sec {}
 
 .big-slider {
+	.video-play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%,-50%,0);
+		@include res(xl) {
+			left: 75%;
+		}
+		@include res(m) {
+			top: 30%;
+			left: 50%;
+		}
+		@include res(s) {
+			top: 25%;
+		}
+		@include res(xs) {
+			top: 23%;
+		}
+		@include res(xxs) {
+			top: 20%;
+		}
+	}
 	.slider-next, .slider-prev {
 		@include res(m) {
 			top: 25%;
@@ -17,7 +39,7 @@
 		}
 		@include res(l) {
 			top: 60px;
-			left: 12px;
+			left: 30px;
 		}
 		@include res(m) {
 			top: initial;
@@ -27,35 +49,50 @@
 		}
 	}
 	&--slided {
+		.big-slide {
+			padding-top: 200px;
+			@include res(xl) {
+				padding-top: 120px;
+			}
+			@include res(l) {
+				padding-top: 90px;
+			}
+			@include res(m) {
+				padding-top: 0;
+			}
+		}
 		.big-slide__info {
-			padding-bottom: $pad-m;
+			@include res(m) {
+				margin: $pad-xs auto $pad-s;
+			}
 		}
 	}
 }
 
 .big-slide {
 	display: flex!important;
-	align-items: flex-start;
+	align-items: center;
+	width: 100%;
 	min-height: 762px;
-	padding-top: 200px;
+	padding-top: $pad-m;
+	padding-bottom: $pad-m;
 	background-position: center center;
 	background-size: cover;
 	outline: none;
 	@include res(xl) {
-		padding-top: 140px;
 		min-height: 610px;
 	}
 	@include res(l) {
 		min-height: 480px;
-		padding-top: 100px;
+
 	}
 	@include res(m) {
 		min-height: initial;
-		padding-top: 0px;
 		background: $text-color;
 		background-image: none!important;
 	}
 	@include res(s) {
+		padding-top: 33px;
 		//min-height: 280px;
 	}
 }
@@ -75,7 +112,7 @@
 .big-slide__info {
 	max-width: 560px;
 	margin-left: 60px;
-	padding-bottom: $pad-m;
+	//padding-bottom: $pad-m;
 	text-align: center;
 	color: #fff;
 	@include res(xl) {
@@ -84,13 +121,13 @@
 	}
 	@include res(l) {
 		margin-left: 0px;
-		padding-left: 50px;
+		padding-left: 60px;
 	}
 	@include res(m) {
 		max-width: 620px;
-		margin: $pad-xs auto $pad-s;
+		margin: $pad-xs auto 0;
 		padding-left: 0;
-		padding-bottom: 5px;
+		//padding-bottom: 5px;
 	}
 	.h1 {
 		@include res(xs) {
@@ -99,7 +136,7 @@
 	}
 }
 
-.big-slide__descr {
+.big-slide__descr, .big-slide__facts {
 	max-width: 360px;
 	margin: 0 auto $pad-m;
 	@include res(xl) {
@@ -111,5 +148,47 @@
 	@include res(s) {
 		margin-bottom: $pad-xs;
 	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
+.big-slide__facts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include res(l) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	p {
+		font-size: 14px;
+		@include res(l) {
+			font-size: 12px;
+		}
+	}
+	.h4 {
+		margin-bottom: 0;
+	}
+}
+
+.big-slide__fact {
+	padding-bottom: $pad-xs;
+	@include res(xl) {
+		padding-bottom: 15px;
+	}
+	@include res(l) {
+		max-width: 160px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	&:last-child {
+		padding-bottom: 0;
+		@include res(l) {
+
+			padding-bottom: 15px;
+		}
+	}
+}

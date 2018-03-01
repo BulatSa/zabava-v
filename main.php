@@ -1,7 +1,7 @@
 ﻿<?php include('header.php'); ?>
 
 <section class="big-slider-sec">
-	<div class="big-slider" id="big-slider">
+	<div class="big-slider big-slider--slided" id="big-slider">
 		<div class="big-slide" style="background-image: url('../img/big-slider/bg-slide-1.jpg')">
 			<div class="container">
 				<div class="big-slide__img">

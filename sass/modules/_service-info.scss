@@ -1,0 +1,73 @@
+.service-info-sec {
+	background: url("../img/service-info/bg-service-info.jpg") no-repeat center top, #fff;
+	background-size: 100% auto;
+	@include res(xl) {
+		background: url("../img/service-info/bg-service-info-note.jpg") no-repeat center top, #fff;
+		background-size: 100% auto;
+	}
+	@include res(xs) {
+		background: url("../img/service-info/bg-pattern-mobile.jpg") center center, #fff;
+	}
+}
+
+.service-info {
+	padding-top: $pad-xs;
+	@include res(xs) {
+		padding-top: 0;
+	}
+}
+
+.service-info__text {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-left: $pad-xl;
+	padding-right: $pad-xl;
+	@include res(xl) {
+		padding-left: $pad-l;
+		padding-right: $pad-l;
+	}
+	@include res(l) {
+		padding-left: $pad-m;
+		padding-right: $pad-m;
+	}
+	@include res(m) {
+		padding-left: $pad-s;
+		padding-right: $pad-s;
+	}
+	@include res(s) {
+		padding-left: $pad-m;
+		padding-right: $pad-m;
+	}
+	@include res(xs) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.user-content {
+		width: 50%;
+		padding-left: $pad-m;
+		padding-right: $pad-m;
+		@include res(xl) {
+			padding-left: $pad-s;
+			padding-right: $pad-s;
+		}
+		@include res(m) {
+			padding-left: $pad-xs;
+			padding-right: $pad-xs;
+		}
+		@include res(s) {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: $pad-xs;
+		}
+		@include res(xs) {
+
+		}
+		&:last-child {
+			@include res(s) {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

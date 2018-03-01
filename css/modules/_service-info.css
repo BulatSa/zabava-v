@@ -1,0 +1,14 @@
+.service-info-sec {
+  background: url("../img/service-info/bg-service-info.jpg") no-repeat center top, #fff; }
+
+.service-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .service-info__text .user-content {
+    width: 50%; }

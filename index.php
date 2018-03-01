@@ -19,6 +19,7 @@
 					<li><a href="rooms.php">Пространства</a></li>
 					<li><a href="service.php">Услуги</a></li>
 					<li><a href="animators.php">Аниматоры</a></li>
+					<li><a href="animator.php">Аниматор внутрянка</a></li>
 					<li><a href="programms.php">Шоу-программы</a></li>
 					<li><a href="calendar.php">Календарные праздники</a></li>
 					<li><a href="additions.php">Добавки</a></li>

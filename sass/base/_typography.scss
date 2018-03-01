@@ -9,6 +9,9 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
+	&[href*=tel] {
+		white-space: nowrap;
+	}
 }
 
 sup {
@@ -124,6 +127,9 @@ h5, .h5 {
 	}
 	h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
 		margin-bottom: 10px;
+		@include res(s) {
+			margin-bottom: 5px;
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}

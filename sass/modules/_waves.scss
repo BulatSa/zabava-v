@@ -13,12 +13,14 @@
 		pointer-events: none;
 		z-index: 1;
 		@include res(l) {
-			top: -49px;
-			height: 60px;
+			top: -39px;
+			height: 40px;
+			background-size: 100% 100%;
 		}
 		@include res(s) {
 			top: -27px;
 			height: 32px;
+			background-size: 100% auto;
 		}
 	}
 }
@@ -38,12 +40,14 @@
 		pointer-events: none;
 		z-index: 1;
 		@include res(l) {
-			bottom: -49px;
-			height: 60px;
+			bottom: -39px;
+			height: 40px;
+			background-size: 100% 100%;
 		}
 		@include res(s) {
 			bottom: -24px;
 			height: 32px;
+			background-size: 100% auto;
 		}
 		@include res(xs) {
 			bottom: -27px;
@@ -66,12 +70,14 @@
 		pointer-events: none;
 		z-index: 1;
 		@include res(l) {
-			top: -49px;
-			height: 60px;
+			top: -39px;
+			height: 40px;
+			background-size: 100% 100%;
 		}
 		@include res(s) {
 			top: -27px;
 			height: 32px;
+			background-size: 100% auto;
 		}
 	}
 }
@@ -91,12 +97,14 @@
 		pointer-events: none;
 		z-index: 1;
 		@include res(l) {
-			bottom: -49px;
-			height: 60px;
+			bottom: -39px;
+			height: 40px;
+			background-size: 100% 100%;
 		}
 		@include res(s) {
 			bottom: -24px;
 			height: 32px;
+			background-size: 100% auto;
 		}
 		@include res(xs) {
 			bottom: -27px;
@@ -119,12 +127,14 @@
 		pointer-events: none;
 		z-index: 1;
 		@include res(l) {
-			top: -49px;
-			height: 60px;
+			top: -39px;
+			height: 40px;
+			background-size: 100% 100%;
 		}
 		@include res(s) {
 			top: -27px;
 			height: 32px;
+			background-size: 100% auto;
 		}
 	}
 }
@@ -144,12 +154,14 @@
 		pointer-events: none;
 		z-index: 1;
 		@include res(l) {
-			bottom: -49px;
-			height: 60px;
+			bottom: -39px;
+			height: 40px;
+			background-size: 100% 100%;
 		}
 		@include res(s) {
 			bottom: -24px;
 			height: 32px;
+			background-size: 100% auto;
 		}
 		@include res(xs) {
 			bottom: -27px;
