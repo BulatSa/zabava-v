@@ -284,39 +284,45 @@
 
 <section class="foto-report-sec def-sec-waved-top wave-blue-top">
 	<div class="foto-report container">
-		<div class="page-title">
+		<div class="page-title page-title--mini">
 			<p class="h2">Фотоотчет</p>
 		</div>
 		<div class="foto-report__slider" id="foto-report-slider">
 			<div class="foto-report__slide">
 				<a href="img/foto-report/foto-report-1.jpg" class="fancy" data-fancybox="foto-rep-1">
 					<img data-lazy="img/foto-report/foto-report-1.jpg" alt="">
+					<span class="video-play"><i class="i-zoom-in"></i></span>
 				</a>
 			</div>
 			<div class="foto-report__slide">
 				<a href="img/foto-report/foto-report-2.jpg" class="fancy" data-fancybox="foto-rep-1">
 					<img data-lazy="img/foto-report/foto-report-2.jpg" alt="">
+					<span class="video-play"><i class="i-zoom-in"></i></span>
 				</a>
 			</div>
 			<div class="foto-report__slide">
 				<a href="img/foto-report/foto-report-3.jpg" class="fancy" data-fancybox="foto-rep-1">
 					<img data-lazy="img/foto-report/foto-report-3.jpg" alt="">
+					<span class="video-play"><i class="i-zoom-in"></i></span>
 				</a>
 			</div>
 
 			<div class="foto-report__slide">
 				<a href="img/foto-report/foto-report-1.jpg" class="fancy" data-fancybox="foto-rep-1">
 					<img data-lazy="img/foto-report/foto-report-1.jpg" alt="">
+					<span class="video-play"><i class="i-zoom-in"></i></span>
 				</a>
 			</div>
 			<div class="foto-report__slide">
 				<a href="img/foto-report/foto-report-2.jpg" class="fancy" data-fancybox="foto-rep-1">
 					<img data-lazy="img/foto-report/foto-report-2.jpg" alt="">
+					<span class="video-play"><i class="i-zoom-in"></i></span>
 				</a>
 			</div>
 			<div class="foto-report__slide">
 				<a href="img/foto-report/foto-report-3.jpg" class="fancy" data-fancybox="foto-rep-1">
 					<img data-lazy="img/foto-report/foto-report-3.jpg" alt="">
+					<span class="video-play"><i class="i-zoom-in"></i></span>
 				</a>
 			</div>
 		</div>

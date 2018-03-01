@@ -48,16 +48,41 @@
 	@include res(m) {
 		transform: translate3d(0,0,0);
 	}
-	&.slick-current {
-		transform: scale(1) translate3d(0,0,0);
+	&:hover {
+		a {
+			box-shadow: 0 0 15px 0 transparentize($blue,0);
+		}
+		.video-play {
+			opacity: 1;
+			&:before {
+				transform: translate3d(-50%,-50%,0) scale(1.2) rotate(15deg);
+			}
+			&:after {
+				transform: translate3d(-50%,-50%,0) scale(0.85) rotate(10deg) skew(-20deg,0deg);
+			}
+		}
 	}
 	a {
 		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		border-radius: 20px;
 		overflow: hidden;
+		transition: all 0.3s ease;
 	}
 	img {
 		display: block;
 		max-width: 100%;
+	}
+	.video-play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		opacity: 0;
+		transition: all 0.3s ease;
+		transform: translate3d(-50%,-50%,0) scale(0.8);
+	}
+	&.slick-current {
+		transform: scale(1) translate3d(0,0,0);
 	}
 }
