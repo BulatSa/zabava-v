@@ -1,0 +1,63 @@
+.foto-report-sec {
+	background: url("../img/foto-report/bg-foto-report.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.foto-report {
+	color: #fff;
+}
+
+.foto-report__slider {
+	margin-bottom: $pad-l;
+	padding-left: $pad-l;
+	padding-right: $pad-l;
+	@include res(xs) {
+		margin-bottom: $pad-m;
+		padding-left: $pad-m;
+		padding-right: $pad-m;
+	}
+	.slider-next {
+		right: 10px;
+		@include res(xs) {
+			right: 3px;
+		}
+	}
+	.slider-prev {
+		left: 10px;
+		@include res(xs) {
+			left: 3px;
+		}
+	}
+	.slider-dots {
+		position: absolute;
+		bottom: -$pad-l;
+		left: 50%;
+		transform: translate3d(-50%,0,0);
+		@include res(xs) {
+			bottom: -$pad-m;
+		}
+	}
+}
+
+.foto-report__slide {
+	width: 33.33333%;
+	padding-left: 4px;
+	padding-right: 4px;
+	transform: scale(0.85) translate3d(0,0,0);
+	transition: all 0.3s ease;
+	@include res(m) {
+		transform: translate3d(0,0,0);
+	}
+	&.slick-current {
+		transform: scale(1) translate3d(0,0,0);
+	}
+	a {
+		display: block;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}

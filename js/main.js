@@ -358,6 +358,38 @@ $('.rooms-slider__list').each(function () {
 		prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>'
 	});
 });
+
+$('#foto-report-slider').slick({
+	adaptiveHeight: true,
+	lazyLoad: 'ondemand',
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	//autoplay: true,
+	centerMode: true,
+	centerPadding: 0,
+	initialSlide: 1,
+	infinite: false,
+	arrows: true,
+	nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',
+	prevArrow: '<button type="button" class="slider-prev"><i class="i-left"></i></button>',
+	dots: true,
+	dotsClass: 'slider-dots',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}]
+});
 /***********************
 Slick END
 ***********************/
