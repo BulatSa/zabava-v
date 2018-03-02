@@ -30,6 +30,7 @@
 					<li><a href="school-inner.php">Для школ и классов внутрянка</a></li>
 					<li><a href="birthday.php">День рождения</a></li>
 					<li><a href="new-year.php">Новый год</a></li>
+					<li><a href="new-year-2.php">Новый год 2</a></li>
 					<li><a href="corporation.php">Корпоративные мероприятия</a></li>
 				</ul>
 			</div>
