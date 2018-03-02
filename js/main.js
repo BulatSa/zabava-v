@@ -188,16 +188,6 @@ $(function () {
  ***********************/
 
 
-/***********************
- Custom Scroll BEGIN
- ***********************/
-$(document).ready(function() {
-
-});
-/***********************
- Custom Scroll END
- ***********************/
-
 
 /***********************
 Aside Menu BEGIN
@@ -472,7 +462,13 @@ $(document).ready(function() {
 $(function () {
 	$('.scrollto').on('click', function () {
 		var elementClick = $(this).attr("href");
-		var destination = $(elementClick).offset().top;
+
+		if($(window).width > 1024) {
+			var destination = $(elementClick).offset().top;
+		} else {
+			var destination = $(elementClick).offset().top - 40;
+		}
+
 		$('html,body').stop().animate({scrollTop: destination}, 1000);
 		return false;
 	});

@@ -12,6 +12,9 @@
 					<div class="big-slide__descr user-content">
 						<p>Уже 7 лет мы помогаем устраивать незабываемые праздники для вашей семьи. За это время нашей студии удалось выработать такой подход, при котором дети получают максимум радостных и светлых впечатлений, а родители — качественный сервис по приятной цене.</p>
 					</div>
+					<div class="btn-center">
+						<a href="#form-bottom" class="btn scrollto">Оставить заявку</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -242,7 +245,7 @@
 </div>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-service.jpg')">
+<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-service.jpg')" id="form-bottom">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Помочь<span class="h3">с организацией праздника</span></p>

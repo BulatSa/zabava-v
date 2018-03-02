@@ -2,15 +2,15 @@
 
 <section class="big-slider-sec">
 	<div class="big-slider">
-		<div class="big-slide" style="background-image: url('../img/big-slider/animator.jpg')">
+		<div class="big-slide" style="background-image: url('../img/big-slider/show.jpg')">
 			<div class="container">
 				<div class="big-slide__img">
-					<img src="img/big-slider/animator.jpg" alt="">
+					<img src="img/big-slider/show.jpg" alt="">
 				</div>
 				<div class="big-slide__info">
-					<p class="h1">Минни Маус</p>
+					<p class="h1">Шоу мыльных пузырей</p>
 					<div class="big-slide__descr user-content">
-						<p>Она обожает петь, танцевать и красиво одеваться. Стала знаменитой на весь мир.</p>
+						<p>Шоу мыльных пузырей — это волшебство, стирающее грань между сказкой и реальностью.</p>
 					</div>
 					<div class="big-slide__facts">
 						<div class="big-slide__fact">
@@ -43,17 +43,17 @@
 	<div class="service-info container">
 		<div class="service-info__text">
 			<div class="user-content user-content--mini">
-				<p class="h3">Описание персонажа</p>
-				<p>Минни Маус — она обожает петь, танцевать и красиво одеваться. Стала знаменитой на весь мир благодаря своим платьицам в горошек. Минни романтичная, милая и внимательная ,а так же неустанно заботится о своих друзьях и питомцах. А ещё , она просто обожает праздники и с огромным удовольствием поздравит именницу (ка)с днем рожения!</p>
+				<p class="h3">Мыльные фокусы и трюки</p>
+				<p>Это необычное шоу перенесет всех в удивительный и завораживающий мир мыльных пузырей, где каждый шаг станет началом увлекательной игры. Дети смогут попасть внутрь гигантского мыльного пузыря, прогуляться под дождем из пузыриков, увидеть своими глазами невероятные фокусы и превращения.</p>
 			</div>
 			<div class="user-content user-content--mini">
 				<p class="h3">В стомость входит</p>
 				<ul>
-					<li>Детский праздник;</li>
-					<li>Проведение мероприятий в торговых центрах;</li>
-					<li>Презентация нового автомобиля в салоне;</li>
-					<li>Встреча гостей на Вашем празднике;</li>
-					<li>И многое-многое другое!!!</li>
+					<li>Огненные и дымовые пузыри;</li>
+					<li>Шоу-трюки на световом столе;</li>
+					<li>Гигантские пузыри и шлейфы;</li>
+					<li>Мастер-класс по надуванию пузырей;</li>
+					<li>Фотосессия!!!</li>
 				</ul>
 			</div>
 		</div>
@@ -109,10 +109,10 @@
 </section>
 
 
-<section class="additions-sec def-sec wave-gray-top">
+<section class="additions-sec def-sec-waved-bottom wave-gray-top wave-gray-bottom">
 	<div class="additions container">
 		<div class="page-title page-title--mini">
-			<p class="h2">Добавки к вашему празднику</p>
+			<p class="h2">Добавьте красок в праздник!</p>
 		</div>
 		<div class="additions__list">
 			<div class="additions__item addition anim">
@@ -152,11 +152,14 @@
 				</a>
 			</div>
 		</div>
+		<div class="btn-center">
+			<a href="#" class="btn btn--trans btn--mini">Все добавки</a>
+		</div>
 	</div>
 </section>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-animators.jpg')" id="form-bottom">
+<section class="form-bottom-sec def-sec" style="background-image: url('../img/form-bottom/bg-programms.jpg')" id="form-bottom">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Оставьте заявку<span class="h3">или позвоните нам по телефону <a href="tel:78462671769">+7 (846) 267-17-69</a></span></p>
@@ -166,7 +169,6 @@
 				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
 				<input type="text" class="input-text" placeholder="E-mail" name="phone">
-				<textarea class="input-textarea" name="comment" placeholder="Дополнения"></textarea>
 				<div class="form-submit">
 					<label class="style-checkbox">
 						<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">

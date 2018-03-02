@@ -126,18 +126,46 @@ h5, .h5 {
 		font-size: 14px;
 	}
 	h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 		@include res(s) {
-			margin-bottom: 5px;
+			margin-bottom: 6px;
 		}
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
-	p,ul,ol,table,img,blockquote,q {
+	p,ul,ol,li,table,img,blockquote,q {
 		margin-bottom: 15px;
+		@include res(s) {
+			margin-bottom: 8px;
+		}
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+	ul {
+		li {
+			position: relative;
+			padding-left: 1.2em;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0.4em;
+				left: 4px;
+				display: block;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background: $text-color;
+				@include res(l) {
+					width: 6px;
+					height: 6px;
+				}
+				@include res(s) {
+					width: 5px;
+					height: 5px;
+				}
+			}
 		}
 	}
 	&--mini {

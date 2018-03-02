@@ -2,15 +2,15 @@
 
 <section class="big-slider-sec">
 	<div class="big-slider">
-		<div class="big-slide" style="background-image: url('../img/big-slider/animator.jpg')">
+		<div class="big-slide" style="background-image: url('../img/big-slider/calendar-1.jpg')">
 			<div class="container">
 				<div class="big-slide__img">
-					<img src="img/big-slider/animator.jpg" alt="">
+					<img src="img/big-slider/calendar-1.jpg" alt="">
 				</div>
 				<div class="big-slide__info">
-					<p class="h1">Минни Маус</p>
+					<p class="h1">День знаний в Парке Юрского периода</p>
 					<div class="big-slide__descr user-content">
-						<p>Она обожает петь, танцевать и красиво одеваться. Стала знаменитой на весь мир.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euiрsmod bibendum laoreet.</p>
 					</div>
 					<div class="big-slide__facts">
 						<div class="big-slide__fact">
@@ -43,17 +43,17 @@
 	<div class="service-info container">
 		<div class="service-info__text">
 			<div class="user-content user-content--mini">
-				<p class="h3">Описание персонажа</p>
-				<p>Минни Маус — она обожает петь, танцевать и красиво одеваться. Стала знаменитой на весь мир благодаря своим платьицам в горошек. Минни романтичная, милая и внимательная ,а так же неустанно заботится о своих друзьях и питомцах. А ещё , она просто обожает праздники и с огромным удовольствием поздравит именницу (ка)с днем рожения!</p>
+				<p class="h3">Описание</p>
+				<p>ДИНОЗАВР - реалистичный и поражающий воображение своими размерами, со звуковыми и световыми спецэффектами!!!<br> Он, конечно, станет эффектной кульминацией вашего мероприятия! А все присутствующие останутся в полном шоке от увиденного! На него можно не только смотреть; его можно потрогать, обнять и сделать фото на память!</p>
 			</div>
 			<div class="user-content user-content--mini">
-				<p class="h3">В стомость входит</p>
+				<p class="h3">Шоу включает в себя</p>
 				<ul>
-					<li>Детский праздник;</li>
-					<li>Проведение мероприятий в торговых центрах;</li>
-					<li>Презентация нового автомобиля в салоне;</li>
-					<li>Встреча гостей на Вашем празднике;</li>
-					<li>И многое-многое другое!!!</li>
+					<li>Огненные и дымовые пузыри;</li>
+					<li>Шоу-трюки на световом столе;</li>
+					<li>Гигантские пузыри и шлейфы;</li>
+					<li>Мастер-класс по надуванию пузырей;</li>
+					<li>Фотосессия!!!</li>
 				</ul>
 			</div>
 		</div>
@@ -112,7 +112,7 @@
 <section class="additions-sec def-sec wave-gray-top">
 	<div class="additions container">
 		<div class="page-title page-title--mini">
-			<p class="h2">Добавки к вашему празднику</p>
+			<p class="h2">Отличные дополнения</p>
 		</div>
 		<div class="additions__list">
 			<div class="additions__item addition anim">
@@ -152,11 +152,14 @@
 				</a>
 			</div>
 		</div>
+		<div class="btn-center">
+			<a href="#" class="btn btn--trans btn--mini">Все добавки</a>
+		</div>
 	</div>
 </section>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-animators.jpg')" id="form-bottom">
+<section class="form-bottom-sec def-sec-waved-top wave-blue-top" style="background-image: url('../img/form-bottom/bg-calendar.jpg')" id="form-bottom">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Оставьте заявку<span class="h3">или позвоните нам по телефону <a href="tel:78462671769">+7 (846) 267-17-69</a></span></p>
@@ -166,7 +169,6 @@
 				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
 				<input type="text" class="input-text" placeholder="E-mail" name="phone">
-				<textarea class="input-textarea" name="comment" placeholder="Дополнения"></textarea>
 				<div class="form-submit">
 					<label class="style-checkbox">
 						<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">

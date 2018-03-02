@@ -21,10 +21,13 @@
 					<li><a href="animators.php">Аниматоры</a></li>
 					<li><a href="animator.php">Аниматор внутрянка</a></li>
 					<li><a href="programms.php">Шоу-программы</a></li>
+					<li><a href="show.php">Шоу-программа внутрянка</a></li>
 					<li><a href="calendar.php">Календарные праздники</a></li>
+					<li><a href="calendar-day-1.php">Кадендарный праздник 1 вариант</a></li>
 					<li><a href="additions.php">Добавки</a></li>
 					<li><a href="schools.php">Для школ и классов</a></li>
 					<li><a href="birthday.php">День рождения</a></li>
+					<li><a href="new-year.php">Новый год</a></li>
 				</ul>
 			</div>
 		</div>

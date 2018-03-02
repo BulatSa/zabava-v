@@ -79,6 +79,7 @@
 	background-position: center center;
 	background-size: cover;
 	outline: none;
+	//background-color: $dark-blue;
 	@include res(xl) {
 		min-height: 610px;
 	}
@@ -95,16 +96,48 @@
 		padding-top: 33px;
 		//min-height: 280px;
 	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(transparentize($dark-blue, 0.4) 0%, transparentize($dark-blue, 0.8) 50%, transparentize($dark-blue, 0.4) 100%);
+		pointer-events: none;
+		z-index: 0;
+		@include res(m) {
+			content: none;
+		}
+	}
+	.container {
+		z-index: 1;
+	}
 }
 
 .big-slide__img {
+	position: relative;
 	display: none;
 	@include res(m) {
 		display: block;
 		margin-left: -$gutter-mobile;
 		margin-right: -$gutter-mobile;
 	}
+	&:after {
+		@include res(m) {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(transparentize($dark-blue, 0.5) 0%, transparentize($dark-blue, 0.8) 50%, transparentize($dark-blue, 0.5) 100%);
+			pointer-events: none;
+			z-index: 0;
+		}
+	}
 	img {
+		display: block;
 		max-width: 100%;
 	}
 }
