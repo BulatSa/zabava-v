@@ -74,8 +74,8 @@
 	align-items: center;
 	width: 100%;
 	min-height: 762px;
-	padding-top: $pad-m;
-	padding-bottom: $pad-m;
+	padding-top: $pad-l;
+	padding-bottom: $pad-l;
 	background-position: center center;
 	background-size: cover;
 	outline: none;
@@ -85,7 +85,6 @@
 	}
 	@include res(l) {
 		min-height: 480px;
-
 	}
 	@include res(m) {
 		min-height: initial;
@@ -94,7 +93,7 @@
 	}
 	@include res(s) {
 		padding-top: 33px;
-		//min-height: 280px;
+		padding-bottom: $pad-m;
 	}
 	&:after {
 		content: '';

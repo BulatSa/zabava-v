@@ -61,7 +61,7 @@
 </section>
 
 
-<section class="foto-report-sec def-sec-waved-top ">
+<section class="foto-report-sec def-sec">
 	<div class="foto-report container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Фотоотчет</p>

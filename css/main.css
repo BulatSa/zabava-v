@@ -3838,8 +3838,8 @@ button::-moz-focus-inner {
   align-items: center;
   width: 100%;
   min-height: 762px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-position: center center;
   background-size: cover;
   outline: none; }
@@ -3856,7 +3856,8 @@ button::-moz-focus-inner {
       background-image: none !important; } }
   @media (max-width: 680px) {
     .big-slide {
-      padding-top: 33px; } }
+      padding-top: 33px;
+      padding-bottom: 40px; } }
   .big-slide:after {
     content: '';
     position: absolute;
