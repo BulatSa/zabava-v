@@ -205,7 +205,7 @@
 	</div>
 </section>
 
-<div class="breadcrumbs">
+<div class="breadcrumbs breadcrumbs--white1">
 	<ul>
 		<li><a href="/">Главная</a></li>
 		<li><a href="#">Внутренняя страница</a></li>

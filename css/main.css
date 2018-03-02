@@ -2783,6 +2783,8 @@ button::-moz-focus-inner {
         font-size: 10px; } }
     .breadcrumbs a:hover {
       color: #f3afd0; }
+  .breadcrumbs--white a {
+    color: #fff; }
 
 .wave-white-top {
   position: relative; }

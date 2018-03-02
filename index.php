@@ -25,7 +25,9 @@
 					<li><a href="calendar.php">Календарные праздники</a></li>
 					<li><a href="calendar-day-1.php">Кадендарный праздник 1 вариант</a></li>
 					<li><a href="additions.php">Добавки</a></li>
+					<li><a href="addition.php">Добавка внутрянка</a></li>
 					<li><a href="schools.php">Для школ и классов</a></li>
+					<li><a href="school-inner.php">Для школ и классов внутрянка</a></li>
 					<li><a href="birthday.php">День рождения</a></li>
 					<li><a href="new-year.php">Новый год</a></li>
 				</ul>
