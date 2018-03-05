@@ -1,24 +1,45 @@
 .video-slider-sec {
-	min-height: 1110px;
-	padding-top: 540px;
-	padding-bottom: $pad-l;
-	background: url("../img/video-slider/bg-video-slider.jpg") no-repeat bottom center, #f6f7fb;
-	@include res(xl) {
+	&--main {
+		min-height: 1110px;
 		padding-top: 540px;
+		padding-bottom: $pad-l;
+		background: url("../img/video-slider/bg-video-slider.jpg") no-repeat bottom center, #f6f7fb;
+		@include res(xl) {
+			padding-top: 540px;
+		}
+		@include res(l) {
+			min-height: 800px;
+			padding-top: 240px;
+			background: url("../img/video-slider/bg-video-slider-tablet.jpg") no-repeat bottom center, #f6f7fb;
+		}
+		@include res(m) {
+			min-height: initial;
+			padding-top: 80px;
+			background: #f6f7fb;
+		}
+		@include res(s) {
+			padding-top: 60px;
+			padding-bottom: $pad-s;
+		}
 	}
-	@include res(l) {
-		min-height: 800px;
-		padding-top: 240px;
-		background: url("../img/video-slider/bg-video-slider-tablet.jpg") no-repeat bottom center, #f6f7fb;
-	}
-	@include res(m) {
-		min-height: initial;
-		padding-top: 80px;
-		background: #f6f7fb;
-	}
-	@include res(s) {
-		padding-top: 60px;
-		padding-bottom: $pad-s;
+	&--inner {
+		min-height: 770px;
+		padding-top: $pad-l;
+		padding-bottom: $pad-l;
+		background: url("../img/video-slider/bg-video-slider-inner.jpg") no-repeat bottom center, #f6f7fb;
+		@include res(l) {
+			min-height: 720px;
+		}
+		@include res(m) {
+			min-height: initial;
+			padding-top: $pad-m;
+			padding-bottom: $pad-m;
+			background: #f6f7fb;
+		}
+		@include res(s) {
+			padding-top: $pad-s;
+			padding-bottom: $pad-s;
+		}
 	}
 }
 

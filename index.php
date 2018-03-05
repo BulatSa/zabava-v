@@ -23,15 +23,21 @@
 					<li><a href="programms.php">Шоу-программы</a></li>
 					<li><a href="show.php">Шоу-программа внутрянка</a></li>
 					<li><a href="calendar.php">Календарные праздники</a></li>
-					<li><a href="calendar-day-1.php">Кадендарный праздник 1 вариант</a></li>
+					<li><a href="calendar-day-2.php">Кадендарный праздник 2 вариант внутрянка кал. праздника</a></li>
+					<li><a href="calendar-day-1.php">Кадендарный праздник 1 вариант внутрянка шоу-программ</a></li>
 					<li><a href="additions.php">Добавки</a></li>
 					<li><a href="addition.php">Добавка внутрянка</a></li>
+					<li><a href="mk.php">Мастер-классы</a></li>
+					<li><a href="oformlenie.php">Оформление</a></li>
 					<li><a href="schools.php">Для школ и классов</a></li>
 					<li><a href="school-inner.php">Для школ и классов внутрянка</a></li>
 					<li><a href="birthday.php">День рождения</a></li>
 					<li><a href="new-year.php">Новый год</a></li>
 					<li><a href="new-year-2.php">Новый год 2</a></li>
+					<li><a href="new-year-3.php">Новый год 3</a></li>
 					<li><a href="corporation.php">Корпоративные мероприятия</a></li>
+					<li><a href="contact.php">Контакты</a></li>
+					<li><a href="reviews.php">Отзывы</a></li>
 				</ul>
 			</div>
 		</div>

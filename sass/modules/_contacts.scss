@@ -1,13 +1,31 @@
 .contacts-sec {
-	padding-top: $pad-m;
-	padding-bottom: $pad-m;
-	@include res(l) {
-		padding-top: $pad-s;
+	&--main {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+		@include res(l) {
+			padding-top: $pad-s;
+			padding-bottom: $pad-s;
+		}
+	}
+	&--inner {
 		padding-bottom: $pad-s;
+		@include res(l) {
+			padding-bottom: $pad-xs;
+		}
 	}
 }
 
-.contacts {}
+.contacts {
+	.page-title {
+		margin-bottom: $pad-m;
+		@include res(l) {
+			margin-bottom: $pad-xs;
+		}
+		@include res(s) {
+			padding-top: 10px;
+		}
+	}
+}
 
 .contacts__wrap {
 	display: flex;

@@ -74,14 +74,16 @@
 	align-items: center;
 	width: 100%;
 	min-height: 762px;
-	padding-top: $pad-l;
-	padding-bottom: $pad-l;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-position: center center;
 	background-size: cover;
 	outline: none;
 	//background-color: $dark-blue;
 	@include res(xl) {
 		min-height: 610px;
+		padding-top: $pad-xl;
+		padding-bottom: $pad-xl;
 	}
 	@include res(l) {
 		min-height: 480px;

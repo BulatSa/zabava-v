@@ -428,7 +428,7 @@
 </section>
 
 
-<section class="video-slider-sec">
+<section class="video-slider-sec video-slider-sec--main">
 	<div class="video-slider container">
 		<div class="video-slider__title">
 			<p class="h2">Осторожно!</p>
@@ -461,7 +461,7 @@
 </section>
 
 
-<section class="contacts-sec">
+<section class="contacts-sec contacts-sec--main">
 	<div class="contacts container">
 		<div class="contacts__wrap">
 			<div class="contacts__map">

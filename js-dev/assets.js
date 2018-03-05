@@ -4,3 +4,4 @@
 //@prepros-append vendors/waypoints.js
 //@prepros-append vendors/simplebar.js
 //@prepros-append vendors/slick.min.js
+//@prepros-append vendors/masonry.pkgd.min.js
