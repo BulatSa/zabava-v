@@ -455,6 +455,23 @@ $(document).ready(function() {
 ***********************/
 
 
+/***********************
+Masonry BEGIN
+***********************/
+if ($('.review-list__items').length){
+	if($(window).width() > 680) {
+		$('.review-list__items').masonry({
+			percentPosition: true,
+			//horizontalOrder: true,
+			gutter: 32
+		});
+	}
+}
+/***********************
+Masonry END
+***********************/
+
+
 
 /***********************
  Прокрутка к секциям BEGIN

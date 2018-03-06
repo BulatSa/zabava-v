@@ -1,11 +1,64 @@
-.review-list-sec {}
+.review-list-sec {
+	background: #fff;
+}
 
-.review-list {}
+.review-list {
+	overflow: hidden;
+	.btn-center {
+		padding-top: $pad-xs;
+		@include res(s) {
+			padding-top: $pad-xxs;
+		}
+	}
+}
 
-.review-list__items {}
+.review-list__items {
+	margin-right: -32px;
+	@include res(l) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@include res(s) {
+		margin-right: 0;
+	}
+}
 
-.review-list__item {}
+.review-list__item {
+	width: calc(25% - 32px);
+	margin-bottom: $pad-s;
+	padding: $pad-xs 22px;
+	border: 1px solid #dddee2;
+	border-radius: 20px;
+	@include res(xl) {
+		width: calc(33.33333% - 32px);
+	}
+	@include res(s) {
+		width: 100%;
+		margin-bottom: $pad-xs;
+		padding: 15px;
+		border-radius: 15px;
+	}
+}
 
 .review-list__item-info {}
 
-.review-list__item-contact {}
+.review-list__item-contact {
+	margin-top: $pad-xs;
+	padding-top: $pad-xs;
+	border-top: 2px dotted #dddee2;
+	@include res(s) {
+		margin-top: 15px;
+		padding-top: 15px;
+	}
+	span {
+		display: block;
+		padding-bottom: 2px;
+		font-size: 14px;
+		@include res(xl) {
+			font-size: 12px;
+		}
+	}
+	.h5 {
+		margin-bottom: 0;
+	}
+}

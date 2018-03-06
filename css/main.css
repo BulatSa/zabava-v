@@ -6037,6 +6037,61 @@ button::-moz-focus-inner {
       .service-info__text .user-content:last-child {
         padding-bottom: 0; } }
 
+.review-list-sec {
+  background: #fff; }
+
+.review-list {
+  overflow: hidden; }
+  .review-list .btn-center {
+    padding-top: 20px; }
+    @media (max-width: 680px) {
+      .review-list .btn-center {
+        padding-top: 10px; } }
+
+.review-list__items {
+  margin-right: -32px; }
+  @media (max-width: 1024px) {
+    .review-list__items {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (max-width: 680px) {
+    .review-list__items {
+      margin-right: 0; } }
+
+.review-list__item {
+  width: calc(25% - 32px);
+  margin-bottom: 30px;
+  padding: 20px 22px;
+  border: 1px solid #dddee2;
+  border-radius: 20px; }
+  @media (max-width: 1480px) {
+    .review-list__item {
+      width: calc(33.33333% - 32px); } }
+  @media (max-width: 680px) {
+    .review-list__item {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 15px; } }
+
+.review-list__item-contact {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px dotted #dddee2; }
+  @media (max-width: 680px) {
+    .review-list__item-contact {
+      margin-top: 15px;
+      padding-top: 15px; } }
+  .review-list__item-contact span {
+    display: block;
+    padding-bottom: 2px;
+    font-size: 14px; }
+    @media (max-width: 1480px) {
+      .review-list__item-contact span {
+        font-size: 12px; } }
+  .review-list__item-contact .h5 {
+    margin-bottom: 0; }
+
 .scroll {
   height: 1000px; }
 
