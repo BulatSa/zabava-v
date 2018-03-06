@@ -35,6 +35,9 @@
 			margin-left: 4px;
 			margin-right: 4px;
 		}
+		@include res(xs) {
+			margin-bottom: 8px;
+		}
 		&:first-child {
 			@include res(s) {
 				margin-left: 0;

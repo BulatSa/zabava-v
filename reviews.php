@@ -120,7 +120,8 @@
 			<form class="ajax-form">
 				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
-				<input type="text" class="input-text" placeholder="E-mail" name="phone">
+				<input type="text" class="input-text input-text--half" placeholder="E-mail" name="phone">
+				<input type="text" class="input-text input-text--half" placeholder="Дата" name="date">
 				<textarea class="input-textarea" name="comment" placeholder="Текст отзыва"></textarea>
 				<div class="form-submit">
 					<label class="style-checkbox">

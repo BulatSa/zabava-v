@@ -13,7 +13,7 @@
 }
 
 .review-list__items {
-	margin-right: -32px;
+	margin-right: -30px;
 	@include res(l) {
 		padding-left: 0;
 		padding-right: 0;
@@ -24,13 +24,16 @@
 }
 
 .review-list__item {
-	width: calc(25% - 32px);
+	width: calc(25% - 30px);
 	margin-bottom: $pad-s;
 	padding: $pad-xs 22px;
 	border: 1px solid #dddee2;
 	border-radius: 20px;
 	@include res(xl) {
-		width: calc(33.33333% - 32px);
+		width: calc(33.33333% - 30px);
+	}
+	@include res(m) {
+		padding: 16px;
 	}
 	@include res(s) {
 		width: 100%;

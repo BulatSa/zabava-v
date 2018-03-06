@@ -456,15 +456,40 @@ $(document).ready(function() {
 
 
 /***********************
+Prices Tabs BEGIN
+***********************/
+$(document).ready(function() {
+	if($('.prices__nav').length) {
+		$('.prices__nav a').on('click', function(e){
+			e.preventDefault();
+			var thisLink = $(this).attr('href');
+
+			$('.prices__nav a').not($(this)).removeClass('active');
+			$(this).addClass('active');
+
+			$('.prices__list .prices__block').removeClass('active');
+			$('.prices__list').find('#'+thisLink).addClass('active');
+		})
+	}
+});
+/***********************
+Prices Tabs END
+***********************/
+
+
+/***********************
 Masonry BEGIN
 ***********************/
 if ($('.review-list__items').length){
 	if($(window).width() > 680) {
-		$('.review-list__items').masonry({
-			percentPosition: true,
-			//horizontalOrder: true,
-			gutter: 32
+		$(window).on('load', function () {
+			$('.review-list__items').masonry({
+				percentPosition: true,
+				//horizontalOrder: true,
+				gutter: 30
+			});
 		});
+
 	}
 }
 /***********************
