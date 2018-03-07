@@ -1,0 +1,48 @@
+.promo-info-sec {}
+
+.promo-info {
+	max-width: 1260px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.promo-info__text {
+	width: 50%;
+	padding-left: $pad-xs;
+	padding-right: $pad-m;
+	padding-bottom: $pad-s;
+	@include res(l) {
+		padding-right: $pad-s;
+		padding-left: $pad-xxs;
+	}
+	@include res(s) {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.promo-info__img {
+	width: 50%;
+	padding-right: $pad-xs;
+	padding-left: $pad-m;
+	padding-bottom: $pad-s;
+	@include res(l) {
+		padding-left: $pad-s;
+		padding-right: $pad-xxs;
+	}
+	@include res(s) {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		border: 1px solid #dddee2;
+		border-radius: 20px;
+	}
+}
+

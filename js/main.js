@@ -87,7 +87,8 @@ $(function () {
  fancybox BEGIN
  ***********************/
 function init_fancy() {
-	$('.fancy').fancybox({
+	$().fancybox({
+		selector: '.fancy',
 		buttons: ['close'],
 		backFocus: false,
 		animationEffect: "zoom-in-out",
@@ -380,6 +381,7 @@ $(window).on('load', function () {
 			centerMode: true,
 			centerPadding: 0,
 			initialSlide: 1,
+			// draggable: false,
 			infinite: false,
 			arrows: true,
 			nextArrow: '<button type="button" class="slider-next"><i class="i-right"></i></button>',

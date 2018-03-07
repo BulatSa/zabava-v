@@ -149,9 +149,9 @@
 		</div>
 		<div class="form-bottom__input">
 			<form class="ajax-form">
-				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
+				<input type="text" class="input-text input-text--half" placeholder="имя" name="name">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
-				<input type="text" class="input-text" placeholder="E-mail" name="phone">
+				<input type="email" class="input-text" placeholder="E-mail" name="email">
 				<textarea class="input-textarea" name="comment" placeholder="Дополнения"></textarea>
 				<div class="form-submit">
 					<label class="style-checkbox">

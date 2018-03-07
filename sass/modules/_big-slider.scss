@@ -31,7 +31,7 @@
 	.slider-dots {
 		position: absolute;
 		top: 160px;
-		left: 132px;
+		left: 92px;
 		max-width: 510px;
 		@include res(xl) {
 			top: 90px;
@@ -39,7 +39,7 @@
 		}
 		@include res(l) {
 			top: 60px;
-			left: 30px;
+			left: 45px;
 		}
 		@include res(m) {
 			top: initial;
@@ -90,6 +90,8 @@
 	}
 	@include res(m) {
 		min-height: initial;
+		padding-top: 36px;
+		padding-bottom: $pad-l;
 		background: $text-color;
 		background-image: none!important;
 	}
@@ -97,22 +99,24 @@
 		padding-top: 33px;
 		padding-bottom: $pad-m;
 	}
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(transparentize($dark-blue, 0.4) 0%, transparentize($dark-blue, 0.8) 50%, transparentize($dark-blue, 0.4) 100%);
-		pointer-events: none;
-		z-index: 0;
-		@include res(m) {
-			content: none;
-		}
-	}
 	.container {
 		z-index: 1;
+	}
+	&--blured {
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(transparentize($dark-blue, 0.4) 0%, transparentize($dark-blue, 0.8) 50%, transparentize($dark-blue, 0.4) 100%);
+			pointer-events: none;
+			z-index: 0;
+			@include res(m) {
+				content: none;
+			}
+		}
 	}
 }
 
@@ -159,9 +163,12 @@
 	}
 	@include res(m) {
 		max-width: 620px;
-		margin: $pad-xs auto 0;
+		margin: 25px auto 0;
 		padding-left: 0;
 		//padding-bottom: 5px;
+	}
+	@include res(xs) {
+		margin-top: 20px;
 	}
 	.h1 {
 		@include res(xs) {

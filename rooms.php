@@ -133,7 +133,7 @@
 						<span class="btn btn--mini btn--nav">Мед</span>
 					</label>
 				</div>
-				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
+				<input type="text" class="input-text input-text--half" placeholder="имя" name="name">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
 				<textarea class="input-textarea" name="comment" placeholder="комментарий"></textarea>
 				<div class="form-submit">

@@ -107,6 +107,13 @@ body {
 	}
 }
 
+.def-sec-squared {
+	padding-bottom: 1px;
+	@include res(s) {
+		padding-bottom: $pad-xxs;
+	}
+}
+
 .def-sec-waved {
 	padding-top: $pad-l;
 	padding-bottom: $pad-l;

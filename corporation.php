@@ -2,7 +2,7 @@
 
 <section class="big-slider-sec">
 	<div class="big-slider">
-		<div class="big-slide" style="background-image: url('../img/big-slider/animator.jpg')">
+		<div class="big-slide" style="background-image: url('../img/big-slider/corporation.jpg')">
 			<div class="container">
 				<div class="big-slide__img">
 					<img src="img/big-slider/animator.jpg" alt="">
@@ -138,7 +138,7 @@
 </section>
 
 
-<section class="additions-sec def-sec wave-gray-top">
+<section class="additions-sec def-sec-top def-sec-squared wave-gray-top wave-squared-gray">
 	<div class="additions container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Отличные дополнения</p>
@@ -188,16 +188,16 @@
 </section>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-corporation.jpg')" id="form-bottom">
+<section class="form-bottom-sec def-sec-big" style="background-image: url('../img/form-bottom/bg-corporation.jpg')" id="form-bottom">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Оставьте заявку<span class="h3">или позвоните нам по телефону <a href="tel:78462671769">+7 (846) 267-17-69</a></span></p>
 		</div>
 		<div class="form-bottom__input">
 			<form class="ajax-form">
-				<input type="text" class="input-text input-text--half" placeholder="имя*" name="name" data-req="true">
+				<input type="text" class="input-text input-text--half" placeholder="имя" name="name">
 				<input type="text" class="input-text input-text--half" placeholder="телефон*" name="phone" data-req="true">
-				<input type="text" class="input-text" placeholder="E-mail" name="phone">
+				<input type="email" class="input-text" placeholder="E-mail" name="email">
 				<textarea class="input-textarea" name="comment" placeholder="Дополнения"></textarea>
 				<div class="form-submit">
 					<label class="style-checkbox">

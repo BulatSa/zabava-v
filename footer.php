@@ -60,14 +60,32 @@
 <!-- Модальные окна -->
 <div class="modals-sec">
 
-	<div id="modal-order" class="modal">
+	<div id="modal-call" class="modal">
 		<p class="h3">Заказать обратный звонок</p>
 		<p class="modal-descr">Оставьте заявку и наш администратор свяжется<br>с&nbsp;Вами в течение 10 минут</p>
 		<form class="ajax-form">
+			<input type="hidden" value="Заказать обратный звонок" name="form_subject">
 			<input type="text" name="user_name" placeholder="имя" data-label="Имя пользователя" class="input-text" >
 			<input type="email" name="user_email" placeholder="e-mail*" data-label="Email" class="input-text" data-req="true">
 			<input type="tel" name="user_tel" placeholder="телефон*" data-label="Телефон"  class="input-text" data-req="true">
+			<div class="form-submit">
+				<label class="style-checkbox">
+					<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">
+					<span>Даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="#" target="_blank">политики конфиденциальности</a>.</span>
+				</label>
+				<button type="submit" class="btn">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div id="modal-order" class="modal">
+		<p class="h3">Оставить заявку</p>
+		<p class="modal-descr">Оставьте заявку и наш администратор свяжется<br>с&nbsp;Вами в течение 10 минут</p>
+		<form class="ajax-form">
 			<input type="hidden" value="Новая заявка" name="form_subject">
+			<input type="text" name="user_name" placeholder="имя" data-label="Имя пользователя" class="input-text" >
+			<input type="email" name="user_email" placeholder="e-mail*" data-label="Email" class="input-text" data-req="true">
+			<input type="tel" name="user_tel" placeholder="телефон*" data-label="Телефон"  class="input-text" data-req="true">
 			<div class="form-submit">
 				<label class="style-checkbox">
 					<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">
@@ -82,10 +100,10 @@
 		<p class="h3">Присоединиться к команде</p>
 		<p class="modal-descr">Оставьте заявку и наш администратор свяжется<br>с&nbsp;Вами</p>
 		<form class="ajax-form">
+			<input type="hidden" value="Присоединиться к команде" name="form_subject">
 			<input type="text" name="user_name" placeholder="имя" data-label="Имя пользователя" class="input-text" >
 			<input type="tel" name="user_tel" placeholder="телефон*" data-label="Телефон"  class="input-text" data-req="true">
 			<textarea class="input-textarea" name="comment" placeholder="О себе"></textarea>
-			<input type="hidden" value="Новая заявка" name="form_subject">
 			<div class="form-submit">
 				<label class="style-checkbox">
 					<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">

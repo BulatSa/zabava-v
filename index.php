@@ -40,6 +40,7 @@
 					<li><a href="reviews.php">Отзывы</a></li>
 					<li><a href="price.php">Цены</a></li>
 					<li><a href="promo.php">Акции</a></li>
+					<li><a href="promo-inner.php">Акции внутрянка</a></li>
 				</ul>
 			</div>
 		</div>
