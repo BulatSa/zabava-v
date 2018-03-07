@@ -94,6 +94,26 @@
 		display: block;
 		text-align: center;
 	}
+	&--promo {
+		&:hover {
+			.addition__img {
+				transform: scale(1.05) translate3d(0,0,0);
+			}
+		}
+		.addition__img {
+			margin-bottom: $pad-xs;
+			transition: all 0.3s ease;
+			@include res(m) {
+				margin-bottom: $pad-xxs;
+			}
+			&:before, &:after {
+				content: none;
+			}
+			img {
+				border: 1px solid #dddee2;
+			}
+		}
+	}
 }
 
 .addition__img {
@@ -153,6 +173,16 @@
 	}
 	@include res(l) {
 		display: none;
+	}
+}
+
+.addition__date {
+	display: block;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 14px;
+	@include res(l) {
+		font-size: 12px;
 	}
 }
 

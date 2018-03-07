@@ -39,6 +39,7 @@
 					<li><a href="contact.php">Контакты</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>
 					<li><a href="price.php">Цены</a></li>
+					<li><a href="promo.php">Акции</a></li>
 				</ul>
 			</div>
 		</div>

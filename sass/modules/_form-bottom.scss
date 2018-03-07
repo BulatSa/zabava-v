@@ -1,9 +1,13 @@
 .form-bottom-sec {
 	color: #fff;
+	display: flex;
+	align-items: center;
+	min-height: 460px;
 	background-color: $dark-blue;
 	background-position: top center;
 	background-size: cover;
 	@include res(l) {
+		min-height: initial;
 		background: linear-gradient(to bottom, #05416b 2%,#0074b9 50%,#05416b 100%)!important;
 	}
 }
