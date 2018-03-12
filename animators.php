@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 
-<section class="animators-list-sec def-sec">
+<section class="animators-list-sec def-sec-top wave-squared-white">
 	<div class="animators-list container">
 		<div class="page-title">
 			<p class="h2">Аниматоры</p>
@@ -115,7 +115,7 @@
 </section>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-animators.jpg')">
+<section class="form-bottom-sec def-sec-big" style="background-image: url('../img/form-bottom/bg-animators.jpg')">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Не можете выбрать?<span class="h3">Мы с радостью вам поможем</span></p>

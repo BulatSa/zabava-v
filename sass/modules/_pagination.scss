@@ -3,6 +3,10 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-bottom: 5px;
+	@include res(l) {
+		padding-bottom: 0;
+	}
 }
 
 .pagination__item {

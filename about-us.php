@@ -268,7 +268,7 @@
 			</div>
 		</div>
 		<div class="work-places__all">
-			<a href="#" class="btn btn--trans">посмотреть пространства</a>
+			<a href="/rooms.php" class="btn btn--trans">посмотреть пространства</a>
 		</div>
 	</div>
 </section>

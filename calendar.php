@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 
-<section class="animators-list-sec def-sec">
+<section class="animators-list-sec def-sec-top wave-squared-white">
 	<div class="animators-list container">
 		<div class="page-title">
 			<p class="h2">Календарные праздники</p>
@@ -65,7 +65,7 @@
 </section>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-calendar.jpg')">
+<section class="form-bottom-sec def-sec-big" style="background-image: url('../img/form-bottom/bg-calendar.jpg')">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Не можете выбрать?<span class="h3">оставьте заявку, и&nbsp;наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время </span></p>

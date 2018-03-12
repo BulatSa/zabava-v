@@ -153,7 +153,7 @@
 			</div>
 		</div>
 		<div class="btn-center">
-			<a href="#" class="btn btn--trans btn--mini">Все добавки</a>
+			<a href="/additions.php" class="btn btn--trans btn--mini">Все добавки</a>
 		</div>
 	</div>
 </section>

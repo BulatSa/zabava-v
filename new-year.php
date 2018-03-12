@@ -109,7 +109,7 @@
 </section>
 
 
-<section class="additions-sec def-sec wave-gray-top">
+<section class="additions-sec def-sec-top wave-gray-top wave-squared-gray">
 	<div class="additions container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Отличные дополнения</p>
@@ -153,13 +153,13 @@
 			</div>
 		</div>
 		<div class="btn-center">
-			<a href="#" class="btn btn--trans btn--mini">Все добавки</a>
+			<a href="/additions.php" class="btn btn--trans btn--mini">Все добавки</a>
 		</div>
 	</div>
 </section>
 
 
-<section class="form-bottom-sec def-sec-waved-top wave-blue-top" style="background-image: url('../img/form-bottom/bg-new-year.jpg')" id="form-bottom">
+<section class="form-bottom-sec def-sec-big" style="background-image: url('../img/form-bottom/bg-new-year.jpg')" id="form-bottom">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Оставьте заявку<span class="h3">или позвоните нам по телефону <a href="tel:78462671769">+7 (846) 267-17-69</a></span></p>

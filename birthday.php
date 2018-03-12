@@ -130,7 +130,7 @@
 			</div>
 		</div>
 		<div class="animators__more">
-			<a href="#" class="btn btn--trans">все аниматоры</a>
+			<a href="/animators.php" class="btn btn--trans">все аниматоры</a>
 		</div>
 	</div>
 </section>
@@ -333,7 +333,7 @@
 </section>
 
 
-<div class="service-steps-sec def-sec-waved-top wave-white-top">
+<div class="service-steps-sec def-sec-top wave-white-top wave-squared-white">
 	<div class="service-steps service-steps--simple container">
 		<div class="page-title">
 			<p class="h2">Как создается праздник?</p>
@@ -408,7 +408,7 @@
 </div>
 
 
-<section class="form-bottom-sec def-sec wave-blue-top" style="background-image: url('../img/form-bottom/bg-birthday.jpg')" id="form-bottom">
+<section class="form-bottom-sec def-sec-big" style="background-image: url('../img/form-bottom/bg-birthday.jpg')" id="form-bottom">
 	<div class="form-bottom container">
 		<div class="page-title page-title--mini">
 			<p class="h2">Помочь<span class="h3">с организацией праздника</span></p>

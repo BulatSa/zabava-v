@@ -20,6 +20,14 @@
 		<div class="promo-info__img">
 			<img src="img/promo/promo-big.jpg" alt="">
 		</div>
+		<div class="promo-info__share">
+			<p class="h5">расскажите об этом своим друзьям</p>
+			<div class="promo-info__share-links">
+				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+				<script src="//yastatic.net/share2/share.js"></script>
+				<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,telegram" data-counter=""></div>
+			</div>
+		</div>
 	</div>
 </section>
 

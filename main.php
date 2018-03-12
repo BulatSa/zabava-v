@@ -118,7 +118,7 @@
 			</div>
 		</div>
 		<div class="work-places__all">
-			<a href="#" class="btn btn--trans">посмотреть пространства</a>
+			<a href="/rooms.php" class="btn btn--trans">посмотреть пространства</a>
 		</div>
 	</div>
 </section>
@@ -189,7 +189,7 @@
 			</div>
 		</div>
 		<div class="animators__more">
-			<a href="#" class="btn btn--trans">все аниматоры</a>
+			<a href="/animators.php" class="btn btn--trans">все аниматоры</a>
 		</div>
 	</div>
 </section>
@@ -422,7 +422,7 @@
 			</div>
 		</div>
 		<div class="btn-center">
-			<a href="#" class="btn btn--trans">все добавки</a>
+			<a href="/additions.php" class="btn btn--trans">все добавки</a>
 		</div>
 	</div>
 </section>

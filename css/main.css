@@ -2629,7 +2629,11 @@ button::-moz-focus-inner {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 5px; }
+  @media (max-width: 1024px) {
+    .pagination {
+      padding-bottom: 0; } }
 
 .pagination__item {
   position: relative;
@@ -6424,6 +6428,31 @@ button::-moz-focus-inner {
     max-width: 100%;
     border: 1px solid #dddee2;
     border-radius: 20px; }
+
+.promo-info__share {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  text-align: center;
+  background: url("../img/promo/bg-share-top.svg") no-repeat center top, url("../img/promo/bg-share-bottom.svg") no-repeat center bottom; }
+  @media (max-width: 1024px) {
+    .promo-info__share {
+      margin-bottom: 20px; } }
+  @media (max-width: 1024px) and (max-width: 680px) {
+    .promo-info__share {
+      margin-bottom: 10px; } }
+
+.promo-info__share-links .ya-share2__container_size_m .ya-share2__item {
+  margin-right: 10px; }
+
+.promo-info__share-links .ya-share2__container_size_m .ya-share2__icon {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle; }
+
+.promo-info__share-links .ya-share2__container_size_m .ya-share2__counter {
+  vertical-align: middle; }
 
 .scroll {
   height: 1000px; }

@@ -46,3 +46,31 @@
 	}
 }
 
+.promo-info__share {
+	width: 100%;
+	margin-top: $pad-xxs;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	text-align: center;
+	background: url("../img/promo/bg-share-top.svg") no-repeat center top, url("../img/promo/bg-share-bottom.svg") no-repeat center bottom;
+	@include res(l) {
+		margin-bottom: $pad-xs;
+		@include res(s) {
+			margin-bottom: $pad-xxs;
+		}
+	}
+}
+
+.promo-info__share-links {
+	.ya-share2__container_size_m .ya-share2__item {
+		margin-right: 10px;
+	}
+	.ya-share2__container_size_m .ya-share2__icon {
+		width: 28px;
+		height: 28px;
+		vertical-align: middle;
+	}
+	.ya-share2__container_size_m .ya-share2__counter {
+		vertical-align: middle;
+	}
+}
